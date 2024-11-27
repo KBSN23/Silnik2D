@@ -1,0 +1,35 @@
+\doxysection{Line\+Segment.\+h}
+\hypertarget{_line_segment_8h_source}{}\label{_line_segment_8h_source}\index{Silnik\_2D/LineSegment.h@{Silnik\_2D/LineSegment.h}}
+\mbox{\hyperlink{_line_segment_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#include\ <SFML/Graphics.hpp>}}
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_point2_d_8h}{Point2D.h}}"{}}}
+\DoxyCodeLine{00004\ }
+\DoxyCodeLine{00005\ }
+\DoxyCodeLine{00006\ \textcolor{keyword}{using\ namespace\ }std;}
+\DoxyCodeLine{00007\ \textcolor{keyword}{using\ namespace\ }sf;}
+\DoxyCodeLine{00008\ }
+\DoxyCodeLine{00009\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_point2_d}{Point2D}};}
+\DoxyCodeLine{00014\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_line_segment}{LineSegment}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_shape_object}{ShapeObject}}}
+\DoxyCodeLine{00015\ \{}
+\DoxyCodeLine{00016\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00018\ \ \ \ \ \mbox{\hyperlink{class_point2_d}{Point2D}}\ edges[2];}
+\DoxyCodeLine{00020\ \ \ \ \ Color\ color;}
+\DoxyCodeLine{00022\ \ \ \ \ \textcolor{keywordtype}{bool}\ isRising;}
+\DoxyCodeLine{00023\ }
+\DoxyCodeLine{00024\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00032\ \ \ \ \ \mbox{\hyperlink{class_line_segment_a319980bb6699cf8057a9e380f4f9b335}{LineSegment}}(Vector2f\ a,\ Vector2f\ b,\ Color\ color,\ \textcolor{keywordtype}{bool}\ isRising);}
+\DoxyCodeLine{00040\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_line_segment_a9934c3e871253eafedb1b7d56a5ea34f}{drawline}}(RenderWindow\&\ window,\ Vector2f\ a,\ Vector2f\ b,\ Color\ color\_);}
+\DoxyCodeLine{00048\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_line_segment_a42ff559bbb88aaad8a0eee3ce4c195e7}{drawlineEquation}}(RenderWindow\&\ window,\ Vector2f\ a,\ Vector2f\ b,\ Color\ color\_);}
+\DoxyCodeLine{00054\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_line_segment_a48feaf306d32757c63985ef9b1bbabb6}{setCoords}}(Vector2f\ a,\ Vector2f\ b);}
+\DoxyCodeLine{00058\ \ \ \ \ \mbox{\hyperlink{class_point2_d}{Point2D}}*\ \mbox{\hyperlink{class_line_segment_a4f36ec4ba9933c8737b5b61c735f7a44}{getEdges}}();}
+\DoxyCodeLine{00062\ \ \ \ \ Color\ \mbox{\hyperlink{class_line_segment_aceb91fa44d7301e20b96fb55801ba769}{getColor}}();}
+\DoxyCodeLine{00067\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_line_segment_a5988b5eaec511af2f534d9da0d675593}{translate}}(Vector2f\ translationVector)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00073\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_line_segment_a8648293d1d47edb7082b44e0ca079516}{rotate}}(\textcolor{keywordtype}{float}\ angle,\ \textcolor{keyword}{const}\ Vector2f\&\ center)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00079\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_line_segment_acaf883671d54203042eeec83d09be7de}{scale}}(\textcolor{keywordtype}{float}\ factor,\ \textcolor{keyword}{const}\ Vector2f\&\ center)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00084\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_line_segment_ab2767a23ab2f455b13500f7903a64095}{draw}}(RenderWindow\&\ window)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00088\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_line_segment_a44137bb65de2396875934e48a6ee5099}{update}}()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00089\ \};}
+
+\end{DoxyCode}

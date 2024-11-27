@@ -1,0 +1,230 @@
+\doxysection{Engine Class Reference}
+\hypertarget{class_engine}{}\label{class_engine}\index{Engine@{Engine}}
+
+
+Klasa glownego silnika gry.  
+
+
+
+
+{\ttfamily \#include $<$Engine.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_engine_a4a85f135604eb0ecf7055ed9c7caee3e}{Engine}} (unsigned int window\+\_\+width, unsigned int window\+\_\+height, sf\+::\+Color clear\+\_\+color, unsigned int frame\+\_\+limit, bool full\+\_\+screen)
+\begin{DoxyCompactList}\small\item\em Konstruktor klasy \doxylink{class_engine}{Engine}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_engine_a45936cce93ebf1bfdfd7ba305e03e864}{\texorpdfstring{$\sim$}{\string~}\+Engine}} ()
+\begin{DoxyCompactList}\small\item\em Destruktor klasy \doxylink{class_engine}{Engine}. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_engine_ab3e7cc706c522b3231f9156bba461436}{initialize}} ()
+\begin{DoxyCompactList}\small\item\em Inicjalizuje biblioteke graficzna SFML. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_engine_a13a43e6d814de94978c515cb084873b1}{run}} ()
+\begin{DoxyCompactList}\small\item\em Uruchamia glowna petle gry. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_engine_a58f0a6386e65ab215b79724a9cb87ca9}{events}} (\mbox{\hyperlink{class_player}{Player}} \&player)
+\begin{DoxyCompactList}\small\item\em Obsluguje zdarzenia zwiazane z mysza i klawiatura. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_engine_ac5c54df7ed3b930268c8d7752c101725}{update}} ()
+\begin{DoxyCompactList}\small\item\em Aktualizuje stan gry. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_engine_a7aa9d52d504b7aa3d56e547495f92c2c}{render}} (\mbox{\hyperlink{class_player}{Player}} \&player, sf\+::\+Clock clock)
+\begin{DoxyCompactList}\small\item\em Renderuje scene gry. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_engine_a4b66d5e31b5dc18b314c8a68163263bd}{cleanup}} ()
+\begin{DoxyCompactList}\small\item\em Zwalnia zasoby i zamyka program. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_engine_af6394bf018136f73722ffe3df894250a}{log\+Error}} (const string \&message)
+\begin{DoxyCompactList}\small\item\em Zapisuje bledy do pliku logu. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Klasa glownego silnika gry. 
+
+Zarzadza petla gry, renderowaniem, obsluga zdarzen oraz podstawowymi funkcjami inicjalizacji i zakonczenia programu. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_engine_a4a85f135604eb0ecf7055ed9c7caee3e}\index{Engine@{Engine}!Engine@{Engine}}
+\index{Engine@{Engine}!Engine@{Engine}}
+\doxysubsubsection{\texorpdfstring{Engine()}{Engine()}}
+{\footnotesize\ttfamily \label{class_engine_a4a85f135604eb0ecf7055ed9c7caee3e} 
+\mbox{\hyperlink{class_engine}{Engine}} (\begin{DoxyParamCaption}\item[{unsigned int}]{window\+\_\+width}{, }\item[{unsigned int}]{window\+\_\+height}{, }\item[{sf\+::\+Color}]{clear\+\_\+color}{, }\item[{unsigned int}]{frame\+\_\+limit}{, }\item[{bool}]{full\+\_\+screen}{}\end{DoxyParamCaption})}
+
+
+
+Konstruktor klasy \doxylink{class_engine}{Engine}. 
+
+Konstruktor klasy \doxylink{class_engine}{Engine}, inicjalizuje parametry okna gry.
+
+
+\begin{DoxyParams}{Parameters}
+{\em window\+\_\+width} & Szerokosc okna gry w pikselach.\\
+\hline
+{\em window\+\_\+height} & Wysokosc okna gry w pikselach.\\
+\hline
+{\em clear\+\_\+color} & Kolor czyszczenia ekranu.\\
+\hline
+{\em frame\+\_\+limit} & Ograniczenie liczby klatek na sekunde.\\
+\hline
+{\em full\+\_\+screen} & Flaga okreslajaca, czy tryb pelnoekranowy jest aktywny.\\
+\hline
+\end{DoxyParams}
+
+
+
+\begin{DoxyParams}{Parameters}
+{\em window\+\_\+width} & Szerokosc okna.\\
+\hline
+{\em window\+\_\+height} & Wysokosc okna.\\
+\hline
+{\em clear\+\_\+color} & Kolor t³a okna.\\
+\hline
+{\em frame\+\_\+limit} & Limit liczby klatek na sekunde.\\
+\hline
+{\em full\+\_\+screen} & Flaga mowiaca o tym ze program dziala w trybie pelnego ekranu.\\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_engine_a45936cce93ebf1bfdfd7ba305e03e864}\index{Engine@{Engine}!````~Engine@{\texorpdfstring{$\sim$}{\string~}Engine}}
+\index{````~Engine@{\texorpdfstring{$\sim$}{\string~}Engine}!Engine@{Engine}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}Engine()}{\string~Engine()}}
+{\footnotesize\ttfamily \label{class_engine_a45936cce93ebf1bfdfd7ba305e03e864} 
+\texorpdfstring{$\sim$}{\string~}\mbox{\hyperlink{class_engine}{Engine}} (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Destruktor klasy \doxylink{class_engine}{Engine}. 
+
+Destruktor klasy \doxylink{class_engine}{Engine} wykonujacy czyszczenie zasobow.
+
+Zwalnia zasoby uzywane przez silnik gry. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_engine_a4b66d5e31b5dc18b314c8a68163263bd}\index{Engine@{Engine}!cleanup@{cleanup}}
+\index{cleanup@{cleanup}!Engine@{Engine}}
+\doxysubsubsection{\texorpdfstring{cleanup()}{cleanup()}}
+{\footnotesize\ttfamily \label{class_engine_a4b66d5e31b5dc18b314c8a68163263bd} 
+void cleanup (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Zwalnia zasoby i zamyka program. 
+
+Wykonuje czyszczenie zasobow, zamykajac okno gry, jesli jest otwarte. \Hypertarget{class_engine_a58f0a6386e65ab215b79724a9cb87ca9}\index{Engine@{Engine}!events@{events}}
+\index{events@{events}!Engine@{Engine}}
+\doxysubsubsection{\texorpdfstring{events()}{events()}}
+{\footnotesize\ttfamily \label{class_engine_a58f0a6386e65ab215b79724a9cb87ca9} 
+void events (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_player}{Player}} \&}]{player}{}\end{DoxyParamCaption})}
+
+
+
+Obsluguje zdarzenia zwiazane z mysza i klawiatura. 
+
+Obs³uguje zdarzenia ~\newline
+
+
+
+\begin{DoxyParams}{Parameters}
+{\em player} & Obiekt gracza, ktorego zdarzenia moga dotyczyc.\\
+\hline
+\end{DoxyParams}
+
+
+
+\begin{DoxyParams}{Parameters}
+{\em player} & Obiekt gracza ktory moze byc zmieniany\\
+\hline
+\end{DoxyParams}
+\texorpdfstring{$<$}{<} Zamkniêcie okna.\Hypertarget{class_engine_ab3e7cc706c522b3231f9156bba461436}\index{Engine@{Engine}!initialize@{initialize}}
+\index{initialize@{initialize}!Engine@{Engine}}
+\doxysubsubsection{\texorpdfstring{initialize()}{initialize()}}
+{\footnotesize\ttfamily \label{class_engine_ab3e7cc706c522b3231f9156bba461436} 
+bool initialize (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Inicjalizuje biblioteke graficzna SFML. 
+
+Inicjalizuje okno gry, ustawia limit klatek na sekunde oraz sprawdza, czy okno zostalo poprawnie utworzone.
+
+Tworzy okno renderowania i ustawia parametry poczatkowe. \begin{DoxyReturn}{Returns}
+true jesli inicjalizacja zakonczyla sie powodzeniem, false w przeciwnym wypadku.
+\end{DoxyReturn}
+
+
+\begin{DoxyReturn}{Returns}
+Zwraca true, jesli inicjalizacja zakonczyla siê sukcesem, w przeciwnym razie false.
+\end{DoxyReturn}
+\Hypertarget{class_engine_af6394bf018136f73722ffe3df894250a}\index{Engine@{Engine}!logError@{logError}}
+\index{logError@{logError}!Engine@{Engine}}
+\doxysubsubsection{\texorpdfstring{logError()}{logError()}}
+{\footnotesize\ttfamily \label{class_engine_af6394bf018136f73722ffe3df894250a} 
+void log\+Error (\begin{DoxyParamCaption}\item[{const string \&}]{message}{}\end{DoxyParamCaption})}
+
+
+
+Zapisuje bledy do pliku logu. 
+
+Loguje blad do pliku logu.
+
+
+\begin{DoxyParams}{Parameters}
+{\em message} & Widomosc bledu do zapisu w logu.\\
+\hline
+\end{DoxyParams}
+
+
+
+\begin{DoxyParams}{Parameters}
+{\em message} & Kominikat bledu\\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_engine_a7aa9d52d504b7aa3d56e547495f92c2c}\index{Engine@{Engine}!render@{render}}
+\index{render@{render}!Engine@{Engine}}
+\doxysubsubsection{\texorpdfstring{render()}{render()}}
+{\footnotesize\ttfamily \label{class_engine_a7aa9d52d504b7aa3d56e547495f92c2c} 
+void render (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_player}{Player}} \&}]{player}{, }\item[{sf\+::\+Clock}]{clock}{}\end{DoxyParamCaption})}
+
+
+
+Renderuje scene gry. 
+
+Renderuje wszystkie obiekty na ekranie, w tym gracza i rozne ksztalty.
+
+Czysci ekran, rysuje obiekty i wyswietla je na ekranie. 
+\begin{DoxyParams}{Parameters}
+{\em player} & Obiekt gracza do rysowania.\\
+\hline
+{\em clock} & Zegar gry sluzacy do zarzadzania czasem.\\
+\hline
+\end{DoxyParams}
+
+
+
+\begin{DoxyParams}{Parameters}
+{\em player} & Obiekt gracza.\\
+\hline
+{\em clock} & Zegar do animacji.\\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_engine_a13a43e6d814de94978c515cb084873b1}\index{Engine@{Engine}!run@{run}}
+\index{run@{run}!Engine@{Engine}}
+\doxysubsubsection{\texorpdfstring{run()}{run()}}
+{\footnotesize\ttfamily \label{class_engine_a13a43e6d814de94978c515cb084873b1} 
+void run (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Uruchamia glowna petle gry. 
+
+Glowna petla gry. Przechodzi przez zdarzenia, aktualizuje stan gry i renderuje grafike.
+
+Zarzadza cyklem zdarzen, aktualizacji i renderowania. \Hypertarget{class_engine_ac5c54df7ed3b930268c8d7752c101725}\index{Engine@{Engine}!update@{update}}
+\index{update@{update}!Engine@{Engine}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily \label{class_engine_ac5c54df7ed3b930268c8d7752c101725} 
+void update (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Aktualizuje stan gry. 
+
+Funkcja przeznaczona do implementacji logiki gry w kolejnych iteracjach. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Silnik\+\_\+2\+D/\mbox{\hyperlink{_engine_8h}{Engine.\+h}}\item 
+Silnik\+\_\+2\+D/\mbox{\hyperlink{_engine_8cpp}{Engine.\+cpp}}\end{DoxyCompactItemize}

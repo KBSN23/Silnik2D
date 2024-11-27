@@ -1,0 +1,382 @@
+\doxysection{Primitive\+Renderer Class Reference}
+\hypertarget{class_primitive_renderer}{}\label{class_primitive_renderer}\index{PrimitiveRenderer@{PrimitiveRenderer}}
+
+
+Klasa do renderowania prymitywow graficznych.  
+
+
+
+
+{\ttfamily \#include $<$Primitive\+Renderer.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_primitive_renderer_adf387fe3157f57009fff7ce945ae59b1}{draw\+Circle}} (Render\+Window \&window, Vector2f center, int radius, Color \mbox{\hyperlink{class_primitive_renderer_aa5f4d1eda21c196bd8401ff73f105073}{color}})
+\begin{DoxyCompactList}\small\item\em Rysuje okrag. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_primitive_renderer_ae5f79392d45294876a3e0b87dc0ff86a}{draw\+Ellipse}} (Render\+Window \&window, Vector2f center, int a, int b, Color \mbox{\hyperlink{class_primitive_renderer_aa5f4d1eda21c196bd8401ff73f105073}{color}})
+\begin{DoxyCompactList}\small\item\em Rysuje elipse. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_primitive_renderer_a25502205b0951e276ad6131d660a4ba1}{draw\+Polyline}} (Render\+Window \&window, vector$<$ \mbox{\hyperlink{class_line_segment}{Line\+Segment}} $>$ s)
+\begin{DoxyCompactList}\small\item\em Rysuje linie lamana utworzona z odcinkow. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_primitive_renderer_a8e8268b92eed8387fc3ab562119c9930}{draw\+Polyline}} (Render\+Window \&window, vector$<$ \mbox{\hyperlink{class_point2_d}{Point2D}} $>$ points, bool closed)
+\begin{DoxyCompactList}\small\item\em Rysuje linie lamana utworzona z punktow. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_primitive_renderer_a989f41f58304090b1f37a35fdba7f854}{draw\+Polygon}} (Render\+Window \&window, vector$<$ \mbox{\hyperlink{class_point2_d}{Point2D}} $>$ points)
+\begin{DoxyCompactList}\small\item\em Rysuje wielokat zdefiniowany przez punkty. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_primitive_renderer_abf54eaabe5581dac6fec1cfae3bda9ed}{draw\+Polygon}} (Render\+Window \&window, vector$<$ \mbox{\hyperlink{class_line_segment}{Line\+Segment}} $>$ segments)
+\begin{DoxyCompactList}\small\item\em Rysuje wielokat zdefiniowany przez odcinki. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_primitive_renderer_a2d391df8250b0f71d668d55e643a1999}{fill}} (Render\+Window \&window, Vector2f start, Color fill\+Color, Color border\+Color)
+\begin{DoxyCompactList}\small\item\em Wypelnia obszar od zadanej pozycji za pomoca koloru wypelnienia. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_primitive_renderer_a86451d48cda990a4cd61536cf64639cb}{Primitive\+Renderer}} (Color color\+\_\+)
+\begin{DoxyCompactList}\small\item\em Konstruktor inicjalizujacy kolor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_primitive_renderer_a7db9791163c4573f2f20bedad2204f77}{\texorpdfstring{$\sim$}{\string~}\+Primitive\+Renderer}} ()
+\begin{DoxyCompactList}\small\item\em Destruktor klasy \doxylink{class_primitive_renderer}{Primitive\+Renderer}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_primitive_renderer_a53726cf74e0152cc7f90d7b8fc796cd5}{Primitive\+Renderer}} ()
+\begin{DoxyCompactList}\small\item\em Konstruktor domyslny klasy \doxylink{class_primitive_renderer}{Primitive\+Renderer}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{class_primitive_renderer_ad7a4a1a1fc9a5225a6ded7ca800dc216}{draw\+Pixel}} (Render\+Window \&window, Vector2f coords, Color \mbox{\hyperlink{class_primitive_renderer_aa5f4d1eda21c196bd8401ff73f105073}{color}})
+\begin{DoxyCompactList}\small\item\em Rysuje pojedynczy piksel w zadanym miejscu i kolorze. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static unordered\+\_\+map$<$ Vector2f, Color, \mbox{\hyperlink{struct_vector_hash}{Vector\+Hash}} $>$ \mbox{\hyperlink{class_primitive_renderer_aacb580d30a9f12b53890f2a0ba302d80}{pixel\+Colors}}
+\begin{DoxyCompactList}\small\item\em Mapa przechowujaca kolory poszczegolnych pikseli. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Color \mbox{\hyperlink{class_primitive_renderer_aa5f4d1eda21c196bd8401ff73f105073}{color}}
+\begin{DoxyCompactList}\small\item\em Domyslny kolor obiektow rysowanych przez renderer. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Klasa do renderowania prymitywow graficznych. 
+
+Klasa {\ttfamily \doxylink{class_primitive_renderer}{Primitive\+Renderer}} oferuje metody do rysowania pikseli, linii, wielokatow, okrêgow i elips, a takze metody do wypelniania obszarow za pomoca algorytmow takich jak {\ttfamily fill}. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_primitive_renderer_a86451d48cda990a4cd61536cf64639cb}\index{PrimitiveRenderer@{PrimitiveRenderer}!PrimitiveRenderer@{PrimitiveRenderer}}
+\index{PrimitiveRenderer@{PrimitiveRenderer}!PrimitiveRenderer@{PrimitiveRenderer}}
+\doxysubsubsection{\texorpdfstring{PrimitiveRenderer()}{PrimitiveRenderer()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{class_primitive_renderer_a86451d48cda990a4cd61536cf64639cb} 
+\mbox{\hyperlink{class_primitive_renderer}{Primitive\+Renderer}} (\begin{DoxyParamCaption}\item[{Color}]{color\+\_\+}{}\end{DoxyParamCaption})}
+
+
+
+Konstruktor inicjalizujacy kolor. 
+
+Konstruktor.
+
+
+\begin{DoxyParams}{Parameters}
+{\em color\+\_\+} & Kolor inicjalizujacy obiekt.\\
+\hline
+\end{DoxyParams}
+
+
+
+\begin{DoxyParams}{Parameters}
+{\em color\+\_\+} & Kolor jaki ma miec obiekt\\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_primitive_renderer_a7db9791163c4573f2f20bedad2204f77}\index{PrimitiveRenderer@{PrimitiveRenderer}!````~PrimitiveRenderer@{\texorpdfstring{$\sim$}{\string~}PrimitiveRenderer}}
+\index{````~PrimitiveRenderer@{\texorpdfstring{$\sim$}{\string~}PrimitiveRenderer}!PrimitiveRenderer@{PrimitiveRenderer}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}PrimitiveRenderer()}{\string~PrimitiveRenderer()}}
+{\footnotesize\ttfamily \label{class_primitive_renderer_a7db9791163c4573f2f20bedad2204f77} 
+\texorpdfstring{$\sim$}{\string~}\mbox{\hyperlink{class_primitive_renderer}{Primitive\+Renderer}} (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Destruktor klasy \doxylink{class_primitive_renderer}{Primitive\+Renderer}. 
+
+Destruktor. \Hypertarget{class_primitive_renderer_a53726cf74e0152cc7f90d7b8fc796cd5}\index{PrimitiveRenderer@{PrimitiveRenderer}!PrimitiveRenderer@{PrimitiveRenderer}}
+\index{PrimitiveRenderer@{PrimitiveRenderer}!PrimitiveRenderer@{PrimitiveRenderer}}
+\doxysubsubsection{\texorpdfstring{PrimitiveRenderer()}{PrimitiveRenderer()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{class_primitive_renderer_a53726cf74e0152cc7f90d7b8fc796cd5} 
+\mbox{\hyperlink{class_primitive_renderer}{Primitive\+Renderer}} (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Konstruktor domyslny klasy \doxylink{class_primitive_renderer}{Primitive\+Renderer}. 
+
+Konstruktor domyslny. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_primitive_renderer_adf387fe3157f57009fff7ce945ae59b1}\index{PrimitiveRenderer@{PrimitiveRenderer}!drawCircle@{drawCircle}}
+\index{drawCircle@{drawCircle}!PrimitiveRenderer@{PrimitiveRenderer}}
+\doxysubsubsection{\texorpdfstring{drawCircle()}{drawCircle()}}
+{\footnotesize\ttfamily \label{class_primitive_renderer_adf387fe3157f57009fff7ce945ae59b1} 
+void draw\+Circle (\begin{DoxyParamCaption}\item[{Render\+Window \&}]{window}{, }\item[{Vector2f}]{center}{, }\item[{int}]{radius}{, }\item[{Color}]{color}{}\end{DoxyParamCaption})}
+
+
+
+Rysuje okrag. 
+
+Rysuje okrag o zadanym srodku i promieniu.
+
+
+\begin{DoxyParams}{Parameters}
+{\em window} & Okno renderowania.\\
+\hline
+{\em center} & Srodek okregu.\\
+\hline
+{\em radius} & Promien okregu.\\
+\hline
+{\em color} & Kolor okregu.\\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_primitive_renderer_ae5f79392d45294876a3e0b87dc0ff86a}\index{PrimitiveRenderer@{PrimitiveRenderer}!drawEllipse@{drawEllipse}}
+\index{drawEllipse@{drawEllipse}!PrimitiveRenderer@{PrimitiveRenderer}}
+\doxysubsubsection{\texorpdfstring{drawEllipse()}{drawEllipse()}}
+{\footnotesize\ttfamily \label{class_primitive_renderer_ae5f79392d45294876a3e0b87dc0ff86a} 
+void draw\+Ellipse (\begin{DoxyParamCaption}\item[{Render\+Window \&}]{window}{, }\item[{Vector2f}]{center}{, }\item[{int}]{a}{, }\item[{int}]{b}{, }\item[{Color}]{color}{}\end{DoxyParamCaption})}
+
+
+
+Rysuje elipse. 
+
+Rysuje elipse o zadanym srodku i wymiarach.
+
+
+\begin{DoxyParams}{Parameters}
+{\em window} & Okno renderowania.\\
+\hline
+{\em center} & Srodek elipsy.\\
+\hline
+{\em a} & Polos pozioma elipsy.\\
+\hline
+{\em b} & Polos pionowa elipsy.\\
+\hline
+{\em color} & Kolor elipsy.\\
+\hline
+\end{DoxyParams}
+
+
+
+\begin{DoxyParams}{Parameters}
+{\em window} & Okno renderowania.\\
+\hline
+{\em center} & Srodek elipsy.\\
+\hline
+{\em a} & Polosie elipsy w poziomie.\\
+\hline
+{\em b} & Polosie elipsy w pionie.\\
+\hline
+{\em color} & Kolor elipsy.\\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_primitive_renderer_ad7a4a1a1fc9a5225a6ded7ca800dc216}\index{PrimitiveRenderer@{PrimitiveRenderer}!drawPixel@{drawPixel}}
+\index{drawPixel@{drawPixel}!PrimitiveRenderer@{PrimitiveRenderer}}
+\doxysubsubsection{\texorpdfstring{drawPixel()}{drawPixel()}}
+{\footnotesize\ttfamily \label{class_primitive_renderer_ad7a4a1a1fc9a5225a6ded7ca800dc216} 
+void draw\+Pixel (\begin{DoxyParamCaption}\item[{Render\+Window \&}]{window}{, }\item[{Vector2f}]{coords}{, }\item[{Color}]{color}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Rysuje pojedynczy piksel w zadanym miejscu i kolorze. 
+
+Rysuje pojedynczy piksel na ekranie.
+
+
+\begin{DoxyParams}{Parameters}
+{\em window} & Okno renderowania.\\
+\hline
+{\em coords} & Wspolrzedne piksela.\\
+\hline
+{\em color} & Kolor piksela.\\
+\hline
+\end{DoxyParams}
+
+
+
+\begin{DoxyParams}{Parameters}
+{\em window} & Okno renderowania.\\
+\hline
+{\em coords} & Wspolrzedne piksela\\
+\hline
+{\em color} & Kolor piksela\\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_primitive_renderer_abf54eaabe5581dac6fec1cfae3bda9ed}\index{PrimitiveRenderer@{PrimitiveRenderer}!drawPolygon@{drawPolygon}}
+\index{drawPolygon@{drawPolygon}!PrimitiveRenderer@{PrimitiveRenderer}}
+\doxysubsubsection{\texorpdfstring{drawPolygon()}{drawPolygon()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{class_primitive_renderer_abf54eaabe5581dac6fec1cfae3bda9ed} 
+void draw\+Polygon (\begin{DoxyParamCaption}\item[{Render\+Window \&}]{window}{, }\item[{vector$<$ \mbox{\hyperlink{class_line_segment}{Line\+Segment}} $>$}]{segments}{}\end{DoxyParamCaption})}
+
+
+
+Rysuje wielokat zdefiniowany przez odcinki. 
+
+Rysuje wielokat na podstawie listy odcinkow.
+
+
+\begin{DoxyParams}{Parameters}
+{\em window} & Okno renderowania.\\
+\hline
+{\em segments} & Wektor odcinkow definiujacych wielokat.\\
+\hline
+\end{DoxyParams}
+
+
+
+\begin{DoxyParams}{Parameters}
+{\em window} & Okno renderowania.\\
+\hline
+{\em segments} & Wektor zawjerajacy odcinki reprezentujace boki wielokata\\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_primitive_renderer_a989f41f58304090b1f37a35fdba7f854}\index{PrimitiveRenderer@{PrimitiveRenderer}!drawPolygon@{drawPolygon}}
+\index{drawPolygon@{drawPolygon}!PrimitiveRenderer@{PrimitiveRenderer}}
+\doxysubsubsection{\texorpdfstring{drawPolygon()}{drawPolygon()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{class_primitive_renderer_a989f41f58304090b1f37a35fdba7f854} 
+void draw\+Polygon (\begin{DoxyParamCaption}\item[{Render\+Window \&}]{window}{, }\item[{vector$<$ \mbox{\hyperlink{class_point2_d}{Point2D}} $>$}]{points}{}\end{DoxyParamCaption})}
+
+
+
+Rysuje wielokat zdefiniowany przez punkty. 
+
+Rysuje wielokat na podstawie listy punktow.
+
+
+\begin{DoxyParams}{Parameters}
+{\em window} & Okno renderowania.\\
+\hline
+{\em points} & Wektor punktow definujacy wielakat.\\
+\hline
+\end{DoxyParams}
+
+
+
+\begin{DoxyParams}{Parameters}
+{\em window} & Okno renderowania.\\
+\hline
+{\em points} & Wektor punktow reprezentujacych wierzcholki wielokata.\\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_primitive_renderer_a25502205b0951e276ad6131d660a4ba1}\index{PrimitiveRenderer@{PrimitiveRenderer}!drawPolyline@{drawPolyline}}
+\index{drawPolyline@{drawPolyline}!PrimitiveRenderer@{PrimitiveRenderer}}
+\doxysubsubsection{\texorpdfstring{drawPolyline()}{drawPolyline()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{class_primitive_renderer_a25502205b0951e276ad6131d660a4ba1} 
+void draw\+Polyline (\begin{DoxyParamCaption}\item[{Render\+Window \&}]{window}{, }\item[{vector$<$ \mbox{\hyperlink{class_line_segment}{Line\+Segment}} $>$}]{segments}{}\end{DoxyParamCaption})}
+
+
+
+Rysuje linie lamana utworzona z odcinkow. 
+
+Rysuje linie ³amana na podstawie listy odcinków.
+
+
+\begin{DoxyParams}{Parameters}
+{\em window} & Okno renderowania.\\
+\hline
+{\em s} & Wektor odcinkow tworzacych lamana.\\
+\hline
+\end{DoxyParams}
+
+
+
+\begin{DoxyParams}{Parameters}
+{\em window} & Okno renderowania.\\
+\hline
+{\em segments} & Wektor zawieraj¹cy odcinki do narysowania.\\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_primitive_renderer_a8e8268b92eed8387fc3ab562119c9930}\index{PrimitiveRenderer@{PrimitiveRenderer}!drawPolyline@{drawPolyline}}
+\index{drawPolyline@{drawPolyline}!PrimitiveRenderer@{PrimitiveRenderer}}
+\doxysubsubsection{\texorpdfstring{drawPolyline()}{drawPolyline()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{class_primitive_renderer_a8e8268b92eed8387fc3ab562119c9930} 
+void draw\+Polyline (\begin{DoxyParamCaption}\item[{Render\+Window \&}]{window}{, }\item[{vector$<$ \mbox{\hyperlink{class_point2_d}{Point2D}} $>$}]{points}{, }\item[{bool}]{closed}{}\end{DoxyParamCaption})}
+
+
+
+Rysuje linie lamana utworzona z punktow. 
+
+Rysuje linie ³amana na podstawie listy punktow, opcjonalnie zamykajac ja w wielokat.
+
+
+\begin{DoxyParams}{Parameters}
+{\em window} & Okno renderowania.\\
+\hline
+{\em points} & Wektor punktow tworzacy lamana.\\
+\hline
+{\em closed} & Czy linia lamana ma byc zamknieta.\\
+\hline
+\end{DoxyParams}
+
+
+
+\begin{DoxyParams}{Parameters}
+{\em window} & Okno renderowania.\\
+\hline
+{\em points} & Wektor punktow reprezentujacych wierzcholki linii.\\
+\hline
+{\em closed} & Flaga okreslajaca, czy linia lamana ma byc zamknieta w wielokat.\\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_primitive_renderer_a2d391df8250b0f71d668d55e643a1999}\index{PrimitiveRenderer@{PrimitiveRenderer}!fill@{fill}}
+\index{fill@{fill}!PrimitiveRenderer@{PrimitiveRenderer}}
+\doxysubsubsection{\texorpdfstring{fill()}{fill()}}
+{\footnotesize\ttfamily \label{class_primitive_renderer_a2d391df8250b0f71d668d55e643a1999} 
+void fill (\begin{DoxyParamCaption}\item[{Render\+Window \&}]{window}{, }\item[{Vector2f}]{start}{, }\item[{Color}]{fill\+Color}{, }\item[{Color}]{border\+Color}{}\end{DoxyParamCaption})}
+
+
+
+Wypelnia obszar od zadanej pozycji za pomoca koloru wypelnienia. 
+
+Wypelnia obszar kolorem, rozpoczynajac od zadanego punktu.
+
+
+\begin{DoxyParams}{Parameters}
+{\em window} & Okno renderowania.\\
+\hline
+{\em start} & Punkt poczatkowy wypelniania.\\
+\hline
+{\em fill\+Color} & Kolor wypelniania.\\
+\hline
+{\em border\+Color} & Kolor granicy, na ktorej wypelnianie ma sie zatrzymac.\\
+\hline
+\end{DoxyParams}
+
+
+
+\begin{DoxyParams}{Parameters}
+{\em window} & Okno renderowania\\
+\hline
+{\em start} & Punkt poczatkowy.\\
+\hline
+{\em fill\+Color} & Kolor wypelnienia.\\
+\hline
+{\em border\+Color} & Kolor graniczny.\\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_primitive_renderer_aa5f4d1eda21c196bd8401ff73f105073}\index{PrimitiveRenderer@{PrimitiveRenderer}!color@{color}}
+\index{color@{color}!PrimitiveRenderer@{PrimitiveRenderer}}
+\doxysubsubsection{\texorpdfstring{color}{color}}
+{\footnotesize\ttfamily \label{class_primitive_renderer_aa5f4d1eda21c196bd8401ff73f105073} 
+Color color\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Domyslny kolor obiektow rysowanych przez renderer. 
+
+\Hypertarget{class_primitive_renderer_aacb580d30a9f12b53890f2a0ba302d80}\index{PrimitiveRenderer@{PrimitiveRenderer}!pixelColors@{pixelColors}}
+\index{pixelColors@{pixelColors}!PrimitiveRenderer@{PrimitiveRenderer}}
+\doxysubsubsection{\texorpdfstring{pixelColors}{pixelColors}}
+{\footnotesize\ttfamily \label{class_primitive_renderer_aacb580d30a9f12b53890f2a0ba302d80} 
+unordered\+\_\+map$<$ Vector2f, Color, \mbox{\hyperlink{struct_vector_hash}{Vector\+Hash}} $>$ pixel\+Colors\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Mapa przechowujaca kolory poszczegolnych pikseli. 
+
+Statyczny czlonek klasy przechowujacy kolory pikseli do renderowania.
+
+Klucz\+: wspolrzedne pikseli {\ttfamily Vector2f}. Wartosc \+: kolor piksela{\ttfamily Color}. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Silnik\+\_\+2\+D/\mbox{\hyperlink{_primitive_renderer_8h}{Primitive\+Renderer.\+h}}\item 
+Silnik\+\_\+2\+D/\mbox{\hyperlink{_primitive_renderer_8cpp}{Primitive\+Renderer.\+cpp}}\end{DoxyCompactItemize}

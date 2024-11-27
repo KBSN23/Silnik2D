@@ -1,0 +1,15 @@
+C:\Users\sylwi\Desktop\Silnik_2D\Silnik_2D\AnimatedObject.cpp;C:\Users\sylwi\Desktop\Silnik_2D\Silnik_2D\x64\Debug\AnimatedObject.obj
+C:\Users\sylwi\Desktop\Silnik_2D\Silnik_2D\BitmapHandler.cpp;C:\Users\sylwi\Desktop\Silnik_2D\Silnik_2D\x64\Debug\BitmapHandler.obj
+C:\Users\sylwi\Desktop\Silnik_2D\Silnik_2D\BitmapObject.cpp;C:\Users\sylwi\Desktop\Silnik_2D\Silnik_2D\x64\Debug\BitmapObject.obj
+C:\Users\sylwi\Desktop\Silnik_2D\Silnik_2D\DrawableObject.cpp;C:\Users\sylwi\Desktop\Silnik_2D\Silnik_2D\x64\Debug\DrawableObject.obj
+C:\Users\sylwi\Desktop\Silnik_2D\Silnik_2D\Engine.cpp;C:\Users\sylwi\Desktop\Silnik_2D\Silnik_2D\x64\Debug\Engine.obj
+C:\Users\sylwi\Desktop\Silnik_2D\Silnik_2D\GameObject.cpp;C:\Users\sylwi\Desktop\Silnik_2D\Silnik_2D\x64\Debug\GameObject.obj
+C:\Users\sylwi\Desktop\Silnik_2D\Silnik_2D\LineSegment.cpp;C:\Users\sylwi\Desktop\Silnik_2D\Silnik_2D\x64\Debug\LineSegment.obj
+C:\Users\sylwi\Desktop\Silnik_2D\Silnik_2D\Player.cpp;C:\Users\sylwi\Desktop\Silnik_2D\Silnik_2D\x64\Debug\Player.obj
+C:\Users\sylwi\Desktop\Silnik_2D\Silnik_2D\Point2D.cpp;C:\Users\sylwi\Desktop\Silnik_2D\Silnik_2D\x64\Debug\Point2D.obj
+C:\Users\sylwi\Desktop\Silnik_2D\Silnik_2D\PrimitiveRenderer.cpp;C:\Users\sylwi\Desktop\Silnik_2D\Silnik_2D\x64\Debug\PrimitiveRenderer.obj
+C:\Users\sylwi\Desktop\Silnik_2D\Silnik_2D\ShapeObject.cpp;C:\Users\sylwi\Desktop\Silnik_2D\Silnik_2D\x64\Debug\ShapeObject.obj
+C:\Users\sylwi\Desktop\Silnik_2D\Silnik_2D\Silnik_2D.cpp;C:\Users\sylwi\Desktop\Silnik_2D\Silnik_2D\x64\Debug\Silnik_2D.obj
+C:\Users\sylwi\Desktop\Silnik_2D\Silnik_2D\SpriteObject.cpp;C:\Users\sylwi\Desktop\Silnik_2D\Silnik_2D\x64\Debug\SpriteObject.obj
+C:\Users\sylwi\Desktop\Silnik_2D\Silnik_2D\TransformableObject.cpp;C:\Users\sylwi\Desktop\Silnik_2D\Silnik_2D\x64\Debug\TransformableObject.obj
+C:\Users\sylwi\Desktop\Silnik_2D\Silnik_2D\UpdatableObject.cpp;C:\Users\sylwi\Desktop\Silnik_2D\Silnik_2D\x64\Debug\UpdatableObject.obj

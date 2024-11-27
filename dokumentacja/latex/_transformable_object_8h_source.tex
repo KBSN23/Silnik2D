@@ -1,0 +1,18 @@
+\doxysection{Transformable\+Object.\+h}
+\hypertarget{_transformable_object_8h_source}{}\label{_transformable_object_8h_source}\index{Silnik\_2D/TransformableObject.h@{Silnik\_2D/TransformableObject.h}}
+\mbox{\hyperlink{_transformable_object_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_updatable_object_8h}{UpdatableObject.h}}"{}}}
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ <SFML/System/Vector2.hpp>}}
+\DoxyCodeLine{00009\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_transformable_object}{TransformableObject}}\ :\ \textcolor{keyword}{public}\ \textcolor{keyword}{virtual}\ \mbox{\hyperlink{class_updatable_object}{UpdatableObject}}}
+\DoxyCodeLine{00010\ \{}
+\DoxyCodeLine{00011\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00015\ \ \ \ \ \mbox{\hyperlink{class_transformable_object_a8af667f84fb444cdb203b24e42462763}{TransformableObject}}();}
+\DoxyCodeLine{00020\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_transformable_object_a6c0e1ca41e3c11c2e6f7350afe03b076}{translate}}(sf::Vector2f\ translationVector)\ =\ 0;}
+\DoxyCodeLine{00026\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_transformable_object_af77ce31fdde79fdce8d0aa9c6f3c3017}{rotate}}(\textcolor{keywordtype}{float}\ angle,\ \textcolor{keyword}{const}\ sf::Vector2f\&\ center)\ =\ 0;}
+\DoxyCodeLine{00032\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_transformable_object_a608b1913d3c5ed5423f4c33bf3f65476}{scale}}(\textcolor{keywordtype}{float}\ factor,\ \textcolor{keyword}{const}\ sf::Vector2f\&\ center)\ =\ 0;}
+\DoxyCodeLine{00033\ \};}
+\DoxyCodeLine{00034\ }
+
+\end{DoxyCode}

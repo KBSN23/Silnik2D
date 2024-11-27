@@ -1,0 +1,78 @@
+\doxysection{Shape\+Object Class Reference}
+\hypertarget{class_shape_object}{}\label{class_shape_object}\index{ShapeObject@{ShapeObject}}
+
+
+Klasa reprezentujaca obiekt ksztaltu.  
+
+
+
+
+{\ttfamily \#include $<$Shape\+Object.\+h$>$}
+
+Inheritance diagram for Shape\+Object\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=5.000000cm]{class_shape_object}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_shape_object_a231997eb29277fa06d537cb429b24e6c}{Shape\+Object}} ()
+\begin{DoxyCompactList}\small\item\em Konstruktor domyslny klasy \doxylink{class_shape_object}{Shape\+Object}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_drawable_object}{Drawable\+Object}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_drawable_object_a98c00e633cd218acf1a471df6a1b7c1c}{Drawable\+Object}} ()
+\begin{DoxyCompactList}\small\item\em Konstruktor domyslny klasy \doxylink{class_drawable_object}{Drawable\+Object}. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_drawable_object_a70f75f440c694809678dc13ab7e489ec}{draw}} (sf\+::\+Render\+Window \&window)=0
+\begin{DoxyCompactList}\small\item\em Wirtualna metoda odpowiedzialna za rysowanie obiektu. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_transformable_object}{Transformable\+Object}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_transformable_object_a8af667f84fb444cdb203b24e42462763}{Transformable\+Object}} ()
+\begin{DoxyCompactList}\small\item\em Konstruktor domyslny obiektu \doxylink{class_transformable_object}{Transformable\+Object}. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_transformable_object_a6c0e1ca41e3c11c2e6f7350afe03b076}{translate}} (sf\+::\+Vector2f translation\+Vector)=0
+\begin{DoxyCompactList}\small\item\em Przesuwa obiekt o okreslony wektor translacji. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_transformable_object_af77ce31fdde79fdce8d0aa9c6f3c3017}{rotate}} (float angle, const sf\+::\+Vector2f \&center)=0
+\begin{DoxyCompactList}\small\item\em Rotuje obiekt o okreslony kat wokol zadanego punktu. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_transformable_object_a608b1913d3c5ed5423f4c33bf3f65476}{scale}} (float factor, const sf\+::\+Vector2f \&center)=0
+\begin{DoxyCompactList}\small\item\em Skaluje obiekt o zadany wspolczynnik wokol zadanego punktu. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_updatable_object}{Updatable\+Object}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_updatable_object_a1b2fd65c4cbe05187c7484b886ac5c06}{Updatable\+Object}} ()
+\begin{DoxyCompactList}\small\item\em Konstruktor domyslny obiektu \doxylink{class_updatable_object}{Updatable\+Object}. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_updatable_object_a99b02345a8a15d3c5ea2844a2253f510}{update}} ()=0
+\begin{DoxyCompactList}\small\item\em Metoda odpowiedzialna za aktualizacje stanu obiektu. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_game_object}{Game\+Object}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_game_object_af43723c7731aca7124fac47e8d5d1809}{Game\+Object}} ()
+\begin{DoxyCompactList}\small\item\em Konstruktor domyslny klasy \doxylink{class_game_object}{Game\+Object}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Klasa reprezentujaca obiekt ksztaltu. 
+
+Klasa {\ttfamily \doxylink{class_shape_object}{Shape\+Object}} dziedziczy wirtualnie z {\ttfamily \doxylink{class_drawable_object}{Drawable\+Object}} i {\ttfamily \doxylink{class_transformable_object}{Transformable\+Object}}. Umozliwia polaczenie funkcjonalnosci rysowania i transformacji w obiektach graficznych opartych na ksztaltach, takich jak prostokaty, okregi czy wielokaty. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_shape_object_a231997eb29277fa06d537cb429b24e6c}\index{ShapeObject@{ShapeObject}!ShapeObject@{ShapeObject}}
+\index{ShapeObject@{ShapeObject}!ShapeObject@{ShapeObject}}
+\doxysubsubsection{\texorpdfstring{ShapeObject()}{ShapeObject()}}
+{\footnotesize\ttfamily \label{class_shape_object_a231997eb29277fa06d537cb429b24e6c} 
+\mbox{\hyperlink{class_shape_object}{Shape\+Object}} (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Konstruktor domyslny klasy \doxylink{class_shape_object}{Shape\+Object}. 
+
+Tworzy obiekt {\ttfamily \doxylink{class_shape_object}{Shape\+Object}} i inicjalizuje jego bazowe wlasciwosci.
+
+Klasa {\ttfamily \doxylink{class_shape_object}{Shape\+Object}} dziedziczy z {\ttfamily \doxylink{class_transformable_object}{Transformable\+Object}} i {\ttfamily \doxylink{class_drawable_object}{Drawable\+Object}}. Konstruktor inicjalizuje obiekty bazowe, zapewniajac podstawowe funkcjonalnosci transformacji i rysowania dla obiektow ksztaltow w grze. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Silnik\+\_\+2\+D/\mbox{\hyperlink{_shape_object_8h}{Shape\+Object.\+h}}\item 
+Silnik\+\_\+2\+D/\mbox{\hyperlink{_shape_object_8cpp}{Shape\+Object.\+cpp}}\end{DoxyCompactItemize}

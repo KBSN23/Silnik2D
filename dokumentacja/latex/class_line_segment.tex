@@ -1,0 +1,379 @@
+\doxysection{Line\+Segment Class Reference}
+\hypertarget{class_line_segment}{}\label{class_line_segment}\index{LineSegment@{LineSegment}}
+
+
+Klasa reprezentujaca odcinek linii w przestrzeni 2D, dziedziczaca po klasie \doxylink{class_shape_object}{Shape\+Object}.  
+
+
+
+
+{\ttfamily \#include $<$Line\+Segment.\+h$>$}
+
+Inheritance diagram for Line\+Segment\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=5.000000cm]{class_line_segment}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_line_segment_a319980bb6699cf8057a9e380f4f9b335}{Line\+Segment}} (Vector2f a, Vector2f b, Color color, bool is\+Rising)
+\begin{DoxyCompactList}\small\item\em Rysuje linie na ekranie. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_line_segment_a42ff559bbb88aaad8a0eee3ce4c195e7}{drawline\+Equation}} (Render\+Window \&window, Vector2f a, Vector2f b, Color color\+\_\+)
+\begin{DoxyCompactList}\small\item\em Rysuje linie za pomoca rownania linii. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_line_segment_a48feaf306d32757c63985ef9b1bbabb6}{set\+Coords}} (Vector2f a, Vector2f b)
+\begin{DoxyCompactList}\small\item\em Ustawia wspolrzedne punktow, ktore definiuja odcinek linii. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_point2_d}{Point2D}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_line_segment_a4f36ec4ba9933c8737b5b61c735f7a44}{get\+Edges}} ()
+\begin{DoxyCompactList}\small\item\em Zwraca tablice punktow odcinka linii. \end{DoxyCompactList}\item 
+Color \mbox{\hyperlink{class_line_segment_aceb91fa44d7301e20b96fb55801ba769}{get\+Color}} ()
+\begin{DoxyCompactList}\small\item\em Zwraca kolor odcinka linii. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_line_segment_a5988b5eaec511af2f534d9da0d675593}{translate}} (Vector2f translation\+Vector) override
+\begin{DoxyCompactList}\small\item\em Przesuwa odcinek linii o zadany wektor translacji. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_line_segment_a8648293d1d47edb7082b44e0ca079516}{rotate}} (float angle, const Vector2f \&center) override
+\begin{DoxyCompactList}\small\item\em Rotuje odcinek linii wokol zadanego punktu o zadany kat. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_line_segment_acaf883671d54203042eeec83d09be7de}{scale}} (float factor, const Vector2f \&center) override
+\begin{DoxyCompactList}\small\item\em Skaluje odcinek linii wokol zadanego punktu. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_line_segment_ab2767a23ab2f455b13500f7903a64095}{draw}} (Render\+Window \&window) override
+\begin{DoxyCompactList}\small\item\em Rysuje odcinek linii na oknie renderowania. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_line_segment_a44137bb65de2396875934e48a6ee5099}{update}} () override
+\begin{DoxyCompactList}\small\item\em Aktualizuje stan odcinka linii. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_shape_object}{Shape\+Object}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_shape_object_a231997eb29277fa06d537cb429b24e6c}{Shape\+Object}} ()
+\begin{DoxyCompactList}\small\item\em Konstruktor domyslny klasy \doxylink{class_shape_object}{Shape\+Object}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_drawable_object}{Drawable\+Object}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_drawable_object_a98c00e633cd218acf1a471df6a1b7c1c}{Drawable\+Object}} ()
+\begin{DoxyCompactList}\small\item\em Konstruktor domyslny klasy \doxylink{class_drawable_object}{Drawable\+Object}. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_drawable_object_a70f75f440c694809678dc13ab7e489ec}{draw}} (sf\+::\+Render\+Window \&window)=0
+\begin{DoxyCompactList}\small\item\em Wirtualna metoda odpowiedzialna za rysowanie obiektu. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_transformable_object}{Transformable\+Object}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_transformable_object_a8af667f84fb444cdb203b24e42462763}{Transformable\+Object}} ()
+\begin{DoxyCompactList}\small\item\em Konstruktor domyslny obiektu \doxylink{class_transformable_object}{Transformable\+Object}. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_transformable_object_a6c0e1ca41e3c11c2e6f7350afe03b076}{translate}} (sf\+::\+Vector2f translation\+Vector)=0
+\begin{DoxyCompactList}\small\item\em Przesuwa obiekt o okreslony wektor translacji. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_transformable_object_af77ce31fdde79fdce8d0aa9c6f3c3017}{rotate}} (float angle, const sf\+::\+Vector2f \&center)=0
+\begin{DoxyCompactList}\small\item\em Rotuje obiekt o okreslony kat wokol zadanego punktu. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_transformable_object_a608b1913d3c5ed5423f4c33bf3f65476}{scale}} (float factor, const sf\+::\+Vector2f \&center)=0
+\begin{DoxyCompactList}\small\item\em Skaluje obiekt o zadany wspolczynnik wokol zadanego punktu. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_updatable_object}{Updatable\+Object}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_updatable_object_a1b2fd65c4cbe05187c7484b886ac5c06}{Updatable\+Object}} ()
+\begin{DoxyCompactList}\small\item\em Konstruktor domyslny obiektu \doxylink{class_updatable_object}{Updatable\+Object}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_game_object}{Game\+Object}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_game_object_af43723c7731aca7124fac47e8d5d1809}{Game\+Object}} ()
+\begin{DoxyCompactList}\small\item\em Konstruktor domyslny klasy \doxylink{class_game_object}{Game\+Object}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{class_line_segment_a9934c3e871253eafedb1b7d56a5ea34f}{drawline}} (Render\+Window \&window, Vector2f a, Vector2f b, Color color\+\_\+)
+\begin{DoxyCompactList}\small\item\em Rysuje linie na ekranie. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Klasa reprezentujaca odcinek linii w przestrzeni 2D, dziedziczaca po klasie \doxylink{class_shape_object}{Shape\+Object}. 
+
+Klasa ta umozliwia rysowanie, transformacje (przesuniecie, rotacje, skalowanie) i przechowywanie odcinka linii. Zawiera metody do rysowania linii, ustawiania wspolrzednych oraz manipulowania obiektem. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_line_segment_a319980bb6699cf8057a9e380f4f9b335}\index{LineSegment@{LineSegment}!LineSegment@{LineSegment}}
+\index{LineSegment@{LineSegment}!LineSegment@{LineSegment}}
+\doxysubsubsection{\texorpdfstring{LineSegment()}{LineSegment()}}
+{\footnotesize\ttfamily \label{class_line_segment_a319980bb6699cf8057a9e380f4f9b335} 
+\mbox{\hyperlink{class_line_segment}{Line\+Segment}} (\begin{DoxyParamCaption}\item[{Vector2f}]{a}{, }\item[{Vector2f}]{b}{, }\item[{Color}]{color}{, }\item[{bool}]{is\+Rising}{}\end{DoxyParamCaption})}
+
+
+
+Rysuje linie na ekranie. 
+
+Konstruktor klasy \doxylink{class_line_segment}{Line\+Segment}.
+
+Inicjalizuje obiekt odcinka linii, ustawiajac wspolrzedne dwoch punktow, kolor oraz flage rosnacej linii. 
+\begin{DoxyParams}{Parameters}
+{\em a} & Pierwszy punkt.\\
+\hline
+{\em b} & Drugi punkt.\\
+\hline
+{\em color} & Kolor odcinka lini.\\
+\hline
+{\em is\+Rising} & Flaga okreslajaca, czy linia rosnie.\\
+\hline
+\end{DoxyParams}
+
+
+Tworzy obiekt odcinka linii na podstawie dwoch punktow, koloru oraz flagi wskazujacej, czy linia rosnie. 
+\begin{DoxyParams}{Parameters}
+{\em a} & Pierwszy punkt odcinka linii.\\
+\hline
+{\em b} & Drugi punkt odcinka linii.\\
+\hline
+{\em color} & Kolor odcinka linii.\\
+\hline
+{\em is\+Rising} & Flaga wskazujaca, czy linia rosnie.\\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_line_segment_ab2767a23ab2f455b13500f7903a64095}\index{LineSegment@{LineSegment}!draw@{draw}}
+\index{draw@{draw}!LineSegment@{LineSegment}}
+\doxysubsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily \label{class_line_segment_ab2767a23ab2f455b13500f7903a64095} 
+void draw (\begin{DoxyParamCaption}\item[{Render\+Window \&}]{window}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}}
+
+
+
+Rysuje odcinek linii na oknie renderowania. 
+
+Rysuje odcinek linii na przekazanym oknie renderowania. 
+\begin{DoxyParams}{Parameters}
+{\em window} & Okno renderowania.\\
+\hline
+\end{DoxyParams}
+
+
+Metoda rysuje linie w zaleznosci od wartosci flagi {\ttfamily is\+Rising}. Jesli {\ttfamily is\+Rising} jest prawdziwe, uzywa algorytmu rysowania linii; w przeciwnym wypadku uzywa rownania linii. 
+\begin{DoxyParams}{Parameters}
+{\em window} & Okno renderowania.\\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_line_segment_a9934c3e871253eafedb1b7d56a5ea34f}\index{LineSegment@{LineSegment}!drawline@{drawline}}
+\index{drawline@{drawline}!LineSegment@{LineSegment}}
+\doxysubsubsection{\texorpdfstring{drawline()}{drawline()}}
+{\footnotesize\ttfamily \label{class_line_segment_a9934c3e871253eafedb1b7d56a5ea34f} 
+void drawline (\begin{DoxyParamCaption}\item[{Render\+Window \&}]{window}{, }\item[{Vector2f}]{a}{, }\item[{Vector2f}]{b}{, }\item[{Color}]{color\+\_\+}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Rysuje linie na ekranie. 
+
+Rysuje linie za pomoca algorytmu Bresenhama.
+
+Rysuje linie miedzy dwoma punktami na przekazanym oknie renderowania. 
+\begin{DoxyParams}{Parameters}
+{\em window} & Okno renderowania.\\
+\hline
+{\em a} & Wspolrzedne pierwszego punktu.\\
+\hline
+{\em b} & \texorpdfstring{$<$}{<}Wspolrzedne drugiego punktu./param\texorpdfstring{$>$}{>} 
+\begin{DoxyParams}{Parameters}
+{\em color\+\_\+} & \\
+\hline
+\end{DoxyParams}
+\\
+\hline
+\end{DoxyParams}
+Uzywa algorytmu Bresenhama do rysowania pikseli linii pomiedzy dwoma punktami. 
+\begin{DoxyParams}{Parameters}
+{\em window} & Okno renderowania.\\
+\hline
+{\em a} & Pierwszy punkt odcinka linii.\\
+\hline
+{\em b} & Drugi punkt odcinka linii.\\
+\hline
+{\em color\+\_\+} & Kolor odcinka linii.\\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_line_segment_a42ff559bbb88aaad8a0eee3ce4c195e7}\index{LineSegment@{LineSegment}!drawlineEquation@{drawlineEquation}}
+\index{drawlineEquation@{drawlineEquation}!LineSegment@{LineSegment}}
+\doxysubsubsection{\texorpdfstring{drawlineEquation()}{drawlineEquation()}}
+{\footnotesize\ttfamily \label{class_line_segment_a42ff559bbb88aaad8a0eee3ce4c195e7} 
+void drawline\+Equation (\begin{DoxyParamCaption}\item[{Render\+Window \&}]{window}{, }\item[{Vector2f}]{a}{, }\item[{Vector2f}]{b}{, }\item[{Color}]{color\+\_\+}{}\end{DoxyParamCaption})}
+
+
+
+Rysuje linie za pomoca rownania linii. 
+
+Wykorzystuje rownanie matematyczne do narysowania linii pomiedzy dwoma punktami na oknie renderowania. 
+\begin{DoxyParams}{Parameters}
+{\em window} & Okno renderowania.\\
+\hline
+{\em a} & Wspolrzedne pierwszego punktu.\\
+\hline
+{\em b} & Wspolrzedne drugiego punktu.\\
+\hline
+{\em color\+\_\+} & Kolor lini.\\
+\hline
+\end{DoxyParams}
+
+
+Wykorzystuje rownanie liniowe do obliczenia i rysowania pikseli linii pomiedzy dwoma punktami. 
+\begin{DoxyParams}{Parameters}
+{\em window} & Okno renderowania.\\
+\hline
+{\em a} & Pierwszy punkt odcinka linii.\\
+\hline
+{\em b} & Drugi punkt odcinka linii.\\
+\hline
+{\em color\+\_\+} & Kolor odcinka linii.\\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_line_segment_aceb91fa44d7301e20b96fb55801ba769}\index{LineSegment@{LineSegment}!getColor@{getColor}}
+\index{getColor@{getColor}!LineSegment@{LineSegment}}
+\doxysubsubsection{\texorpdfstring{getColor()}{getColor()}}
+{\footnotesize\ttfamily \label{class_line_segment_aceb91fa44d7301e20b96fb55801ba769} 
+Color get\+Color (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Zwraca kolor odcinka linii. 
+
+\begin{DoxyReturn}{Returns}
+Kolor linii.
+\end{DoxyReturn}
+\Hypertarget{class_line_segment_a4f36ec4ba9933c8737b5b61c735f7a44}\index{LineSegment@{LineSegment}!getEdges@{getEdges}}
+\index{getEdges@{getEdges}!LineSegment@{LineSegment}}
+\doxysubsubsection{\texorpdfstring{getEdges()}{getEdges()}}
+{\footnotesize\ttfamily \label{class_line_segment_a4f36ec4ba9933c8737b5b61c735f7a44} 
+\mbox{\hyperlink{class_point2_d}{Point2D}} \texorpdfstring{$\ast$}{*} get\+Edges (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Zwraca tablice punktow odcinka linii. 
+
+Zwraca tablice dwoch punktow, ktore definiuja odcinek linii.
+
+\begin{DoxyReturn}{Returns}
+Tablica dwoch punktow (krawedzi) odcinka linii.
+\end{DoxyReturn}
+
+
+\begin{DoxyReturn}{Returns}
+Tablica punktow reprezentujacych konce odcinka linii.
+\end{DoxyReturn}
+\Hypertarget{class_line_segment_a8648293d1d47edb7082b44e0ca079516}\index{LineSegment@{LineSegment}!rotate@{rotate}}
+\index{rotate@{rotate}!LineSegment@{LineSegment}}
+\doxysubsubsection{\texorpdfstring{rotate()}{rotate()}}
+{\footnotesize\ttfamily \label{class_line_segment_a8648293d1d47edb7082b44e0ca079516} 
+void rotate (\begin{DoxyParamCaption}\item[{float}]{angle}{, }\item[{const Vector2f \&}]{center}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}}
+
+
+
+Rotuje odcinek linii wokol zadanego punktu o zadany kat. 
+
+Obraca odcinek linii wokol zadanego punktu o okreslony kat.
+
+Metoda rotuje odcinek linii wokol zadanego punktu o zadany kat (w stopniach). 
+\begin{DoxyParams}{Parameters}
+{\em angle} & Kat rotacji w stopniach.\\
+\hline
+{\em center} & Punkt centralny rotacji.\\
+\hline
+\end{DoxyParams}
+
+
+
+\begin{DoxyParams}{Parameters}
+{\em angle} & Kat rotacji w stopniach.\\
+\hline
+{\em center} & Punkt centralny rotacji.\\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_line_segment_acaf883671d54203042eeec83d09be7de}\index{LineSegment@{LineSegment}!scale@{scale}}
+\index{scale@{scale}!LineSegment@{LineSegment}}
+\doxysubsubsection{\texorpdfstring{scale()}{scale()}}
+{\footnotesize\ttfamily \label{class_line_segment_acaf883671d54203042eeec83d09be7de} 
+void scale (\begin{DoxyParamCaption}\item[{float}]{factor}{, }\item[{const Vector2f \&}]{center}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}}
+
+
+
+Skaluje odcinek linii wokol zadanego punktu. 
+
+Skaluje odcinek linii o okreslony wspolczynnik wzgledem zadanego punktu.
+
+Metoda skaluje odcinek linii o podany wspolczynnik skalowania, przy czym operacja odbywa sie wokol zadanego punktu. 
+\begin{DoxyParams}{Parameters}
+{\em factor} & Wspolczynnik skalowania.\\
+\hline
+{\em center} & Punkt, wokol ktorego ma odbywac sie skalowanie.\\
+\hline
+\end{DoxyParams}
+
+
+
+\begin{DoxyParams}{Parameters}
+{\em factor} & Wspolczynnik skalowania.\\
+\hline
+{\em center} & Punkt centralny skalowania.\\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_line_segment_a48feaf306d32757c63985ef9b1bbabb6}\index{LineSegment@{LineSegment}!setCoords@{setCoords}}
+\index{setCoords@{setCoords}!LineSegment@{LineSegment}}
+\doxysubsubsection{\texorpdfstring{setCoords()}{setCoords()}}
+{\footnotesize\ttfamily \label{class_line_segment_a48feaf306d32757c63985ef9b1bbabb6} 
+void set\+Coords (\begin{DoxyParamCaption}\item[{Vector2f}]{a}{, }\item[{Vector2f}]{b}{}\end{DoxyParamCaption})}
+
+
+
+Ustawia wspolrzedne punktow, ktore definiuja odcinek linii. 
+
+Ustawia nowe wspolrzedne punktow odcinka linii.
+
+Metoda ustawia nowe wspolrzedne punktow, ktore definiuja odcinek linii. 
+\begin{DoxyParams}{Parameters}
+{\em a} & Nowy pierwszy punkt odcinka linii.\\
+\hline
+{\em b} & Nowy drugi punkt odcinka linii\\
+\hline
+\end{DoxyParams}
+
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & Nowy pierwszy punkt odcinka linii.\\
+\hline
+{\em b} & Nowy drugi punkt odcinka linii.\\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_line_segment_a5988b5eaec511af2f534d9da0d675593}\index{LineSegment@{LineSegment}!translate@{translate}}
+\index{translate@{translate}!LineSegment@{LineSegment}}
+\doxysubsubsection{\texorpdfstring{translate()}{translate()}}
+{\footnotesize\ttfamily \label{class_line_segment_a5988b5eaec511af2f534d9da0d675593} 
+void translate (\begin{DoxyParamCaption}\item[{Vector2f}]{translation\+Vector}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}}
+
+
+
+Przesuwa odcinek linii o zadany wektor translacji. 
+
+Metoda przesuwa odcinek linii o zadany wektor. 
+\begin{DoxyParams}{Parameters}
+{\em translation\+Vector} & Wektor translacji, o ktory ma zostac przesuniety odcinek linii.\\
+\hline
+\end{DoxyParams}
+
+
+
+\begin{DoxyParams}{Parameters}
+{\em translation\+Vector} & Wektor translacji.\\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_line_segment_a44137bb65de2396875934e48a6ee5099}\index{LineSegment@{LineSegment}!update@{update}}
+\index{update@{update}!LineSegment@{LineSegment}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily \label{class_line_segment_a44137bb65de2396875934e48a6ee5099} 
+void update (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Aktualizuje stan odcinka linii. 
+
+Metoda ta moze byc uzywana do aktualizacji stanu obiektu, np. w ramach logiki gry.
+
+Metoda do aktualizacji stanu obiektu. Aktualnie pusta, moze byc rozszerzona w przyszlosci. 
+
+Implements \mbox{\hyperlink{class_updatable_object_a99b02345a8a15d3c5ea2844a2253f510}{Updatable\+Object}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Silnik\+\_\+2\+D/\mbox{\hyperlink{_line_segment_8h}{Line\+Segment.\+h}}\item 
+Silnik\+\_\+2\+D/\mbox{\hyperlink{_line_segment_8cpp}{Line\+Segment.\+cpp}}\end{DoxyCompactItemize}

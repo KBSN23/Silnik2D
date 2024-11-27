@@ -1,0 +1,165 @@
+\doxysection{Bitmap\+Handler Class Reference}
+\hypertarget{class_bitmap_handler}{}\label{class_bitmap_handler}\index{BitmapHandler@{BitmapHandler}}
+
+
+Klasa obslugujaca tworzenie, ladowanie i wyswietlanie bitmap w SFML.  
+
+
+
+
+{\ttfamily \#include $<$Bitmap\+Handler.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_bitmap_handler_a54c50e29ed4832e52509878368640991}{Bitmap\+Handler}} ()
+\begin{DoxyCompactList}\small\item\em Konstruktor domyslny klasy \doxylink{class_bitmap_handler}{Bitmap\+Handler}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{class_bitmap_handler_a1853c23447b12f2d443ecc87500891af}{create}} (unsigned int width, unsigned int height, const sf\+::\+Color \&color=sf\+::\+Color\+::\+White)
+\begin{DoxyCompactList}\small\item\em Tworzy nowa bitmape o zadanej szerokosci, wysokosci i kolorze. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_bitmap_handler_a511b0192335a6bf0abe904b64dd14136}{load\+From\+File}} (std\+::string \&filename)
+\begin{DoxyCompactList}\small\item\em Wczytuje bitmape z pliku. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_bitmap_handler_a6f7461c178c4adca6f7a58ea38d7dfd4}{clear}} (const sf\+::\+Color \&color=sf\+::\+Color\+::\+Transparent)
+\begin{DoxyCompactList}\small\item\em Czysci bitmape, wypelniajac ja wybranym kolorem. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_bitmap_handler_afacd5584fa0f88a7c8ecfe09d46eb973}{display}} (sf\+::\+Render\+Window \&window, sf\+::\+Vector2f pos)
+\begin{DoxyCompactList}\small\item\em Wyswietla bitmape w zadanym oknie SFML. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Klasa obslugujaca tworzenie, ladowanie i wyswietlanie bitmap w SFML. 
+
+Klasa \doxylink{class_bitmap_handler}{Bitmap\+Handler} zapewnia statyczne metody do operacji na bitmapach, takich jak\+:
+\begin{DoxyItemize}
+\item Tworzenie nowych bitmap o zadanych wymiarach i kolorze. -\/Wczytywanie bitmap z plikow. -\/Czyszczenie bitmapy wybranym kolorem. -\/Wyswietlanie bitmapy w oknie SFML. 
+\end{DoxyItemize}
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_bitmap_handler_a54c50e29ed4832e52509878368640991}\index{BitmapHandler@{BitmapHandler}!BitmapHandler@{BitmapHandler}}
+\index{BitmapHandler@{BitmapHandler}!BitmapHandler@{BitmapHandler}}
+\doxysubsubsection{\texorpdfstring{BitmapHandler()}{BitmapHandler()}}
+{\footnotesize\ttfamily \label{class_bitmap_handler_a54c50e29ed4832e52509878368640991} 
+\mbox{\hyperlink{class_bitmap_handler}{Bitmap\+Handler}} (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Konstruktor domyslny klasy \doxylink{class_bitmap_handler}{Bitmap\+Handler}. 
+
+Konstruktor nie wykonuje zadnych operacji, poniewaz wszystkie metody i dane s¹ statyczne. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_bitmap_handler_a6f7461c178c4adca6f7a58ea38d7dfd4}\index{BitmapHandler@{BitmapHandler}!clear@{clear}}
+\index{clear@{clear}!BitmapHandler@{BitmapHandler}}
+\doxysubsubsection{\texorpdfstring{clear()}{clear()}}
+{\footnotesize\ttfamily \label{class_bitmap_handler_a6f7461c178c4adca6f7a58ea38d7dfd4} 
+void clear (\begin{DoxyParamCaption}\item[{const sf\+::\+Color \&}]{color}{ = {\ttfamily sf\+:\+:Color\+:\+:Transparent}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Czysci bitmape, wypelniajac ja wybranym kolorem. 
+
+Czysci obraz, tworzac nowy o tych samych rozmiarach i podanym kolorze tla.
+
+
+\begin{DoxyParams}{Parameters}
+{\em color} & Kolor uzyty do wypelnienia bitmapy.\\
+\hline
+\end{DoxyParams}
+
+
+
+\begin{DoxyParams}{Parameters}
+{\em color} & Kolor tla do uzycia przy czyszczeniu obrazu.\\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_bitmap_handler_a1853c23447b12f2d443ecc87500891af}\index{BitmapHandler@{BitmapHandler}!create@{create}}
+\index{create@{create}!BitmapHandler@{BitmapHandler}}
+\doxysubsubsection{\texorpdfstring{create()}{create()}}
+{\footnotesize\ttfamily \label{class_bitmap_handler_a1853c23447b12f2d443ecc87500891af} 
+void create (\begin{DoxyParamCaption}\item[{unsigned int}]{width}{, }\item[{unsigned int}]{height}{, }\item[{const sf\+::\+Color \&}]{color}{ = {\ttfamily sf\+:\+:Color\+:\+:White}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Tworzy nowa bitmape o zadanej szerokosci, wysokosci i kolorze. 
+
+Tworzy obraz o podanych rozmiarach i kolorze tla.
+
+
+\begin{DoxyParams}{Parameters}
+{\em width} & Szerokosc bitmapy.\\
+\hline
+{\em height} & Wysokosc bitmapy.\\
+\hline
+{\em color} & Kolor wypelnienia bitmapy.\\
+\hline
+\end{DoxyParams}
+
+
+
+\begin{DoxyParams}{Parameters}
+{\em width} & Szerokosc obrazu.\\
+\hline
+{\em height} & Wysokosc obrazu.\\
+\hline
+{\em color} & Kolor tla obrazu.\\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_bitmap_handler_afacd5584fa0f88a7c8ecfe09d46eb973}\index{BitmapHandler@{BitmapHandler}!display@{display}}
+\index{display@{display}!BitmapHandler@{BitmapHandler}}
+\doxysubsubsection{\texorpdfstring{display()}{display()}}
+{\footnotesize\ttfamily \label{class_bitmap_handler_afacd5584fa0f88a7c8ecfe09d46eb973} 
+void display (\begin{DoxyParamCaption}\item[{sf\+::\+Render\+Window \&}]{window}{, }\item[{sf\+::\+Vector2f}]{pos}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Wyswietla bitmape w zadanym oknie SFML. 
+
+Wyswietla obraz na oknie renderowania w okreslonej pozycji.
+
+
+\begin{DoxyParams}{Parameters}
+{\em window} & Okno w ktorym zostanie wyswietlony obraz.\\
+\hline
+{\em pos} & Pozycja w oknie, gdzie bitmapa zostanie narysowana.\\
+\hline
+\end{DoxyParams}
+
+
+
+\begin{DoxyParams}{Parameters}
+{\em window} & Okno rendowania.\\
+\hline
+{\em pos} & Pozycja na ekranie, w ktorej ma byc wyswietlony obraz.\\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_bitmap_handler_a511b0192335a6bf0abe904b64dd14136}\index{BitmapHandler@{BitmapHandler}!loadFromFile@{loadFromFile}}
+\index{loadFromFile@{loadFromFile}!BitmapHandler@{BitmapHandler}}
+\doxysubsubsection{\texorpdfstring{loadFromFile()}{loadFromFile()}}
+{\footnotesize\ttfamily \label{class_bitmap_handler_a511b0192335a6bf0abe904b64dd14136} 
+void load\+From\+File (\begin{DoxyParamCaption}\item[{std\+::string \&}]{filename}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Wczytuje bitmape z pliku. 
+
+Laduje obraz do pliku.
+
+
+\begin{DoxyParams}{Parameters}
+{\em filename} & Sciezka do pliku zawierajacego obraz.\\
+\hline
+\end{DoxyParams}
+
+
+
+\begin{DoxyParams}{Parameters}
+{\em filename} & Nazwa pliku do zaladowania.\\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Silnik\+\_\+2\+D/\mbox{\hyperlink{_bitmap_handler_8h}{Bitmap\+Handler.\+h}}\item 
+Silnik\+\_\+2\+D/\mbox{\hyperlink{_bitmap_handler_8cpp}{Bitmap\+Handler.\+cpp}}\end{DoxyCompactItemize}

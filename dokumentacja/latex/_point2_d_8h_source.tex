@@ -1,0 +1,30 @@
+\doxysection{Point2\+D.\+h}
+\hypertarget{_point2_d_8h_source}{}\label{_point2_d_8h_source}\index{Silnik\_2D/Point2D.h@{Silnik\_2D/Point2D.h}}
+\mbox{\hyperlink{_point2_d_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#include\ <SFML/Graphics.hpp>}}
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_shape_object_8h}{ShapeObject.h}}"{}}}
+\DoxyCodeLine{00004\ }
+\DoxyCodeLine{00005\ \textcolor{keyword}{using\ namespace\ }sf;}
+\DoxyCodeLine{00006\ \textcolor{keyword}{using\ namespace\ }std;}
+\DoxyCodeLine{00011\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_point2_d}{Point2D}}\ :\ \textcolor{keyword}{public}\ \textcolor{keyword}{virtual}\ \mbox{\hyperlink{class_shape_object}{ShapeObject}}}
+\DoxyCodeLine{00012\ \{}
+\DoxyCodeLine{00013\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00015\ \ \ \ \ Vector2f\ coords;}
+\DoxyCodeLine{00017\ \ \ \ \ Color\ color;}
+\DoxyCodeLine{00018\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00020\ \ \ \ \ \mbox{\hyperlink{class_point2_d_adbb78b7f84456558171243549b03928c}{Point2D}}();}
+\DoxyCodeLine{00026\ \ \ \ \ \mbox{\hyperlink{class_point2_d_adbb78b7f84456558171243549b03928c}{Point2D}}(Vector2f\ coords,\ Color\ color);}
+\DoxyCodeLine{00030\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_point2_d_ab2767a23ab2f455b13500f7903a64095}{draw}}(RenderWindow\&\ window)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00034\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_point2_d_afbb0bc2f78749017bfccaec312fecbdf}{setCoords}}(Vector2f\ newCoords);}
+\DoxyCodeLine{00038\ \ \ \ \ Vector2f\ \mbox{\hyperlink{class_point2_d_ae43c99739662b59049f6efcbeb7bf539}{getCoords}}();}
+\DoxyCodeLine{00042\ \ \ \ \ Color\ \mbox{\hyperlink{class_point2_d_aceb91fa44d7301e20b96fb55801ba769}{getColor}}();}
+\DoxyCodeLine{00046\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_point2_d_a5988b5eaec511af2f534d9da0d675593}{translate}}(Vector2f\ translationVector)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00051\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_point2_d_a8648293d1d47edb7082b44e0ca079516}{rotate}}(\textcolor{keywordtype}{float}\ angle,\ \textcolor{keyword}{const}\ Vector2f\&\ center)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00056\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_point2_d_acaf883671d54203042eeec83d09be7de}{scale}}(\textcolor{keywordtype}{float}\ factor,\ \textcolor{keyword}{const}\ Vector2f\&\ center)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00060\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_point2_d_a44137bb65de2396875934e48a6ee5099}{update}}()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00061\ \};}
+\DoxyCodeLine{00062\ }
+
+\end{DoxyCode}

@@ -1,0 +1,54 @@
+\doxysection{Animated\+Object Class Reference}
+\hypertarget{class_animated_object}{}\label{class_animated_object}\index{AnimatedObject@{AnimatedObject}}
+
+
+Klasa bazowa dla obiektow animowanych.  
+
+
+
+
+{\ttfamily \#include $<$Animated\+Object.\+h$>$}
+
+Inheritance diagram for Animated\+Object\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_animated_object}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{class_animated_object_a7f6848798f794ee44d794ec79c681b39}{animate}} (sf\+::\+Clock clock)=0
+\begin{DoxyCompactList}\small\item\em Wirtualna metoda odpowiedzialna za animacje obiektu. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Klasa bazowa dla obiektow animowanych. 
+
+Klasa {\ttfamily \doxylink{class_animated_object}{Animated\+Object}} definiuje interfejs dla obiektow, ktore maja mozliwosc animacji. Zawiera metode wirtualna czysto abstrakcyjna {\ttfamily animate}, ktora musi zostac zaimplementowana w klasach pochodnych. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_animated_object_a7f6848798f794ee44d794ec79c681b39}\index{AnimatedObject@{AnimatedObject}!animate@{animate}}
+\index{animate@{animate}!AnimatedObject@{AnimatedObject}}
+\doxysubsubsection{\texorpdfstring{animate()}{animate()}}
+{\footnotesize\ttfamily \label{class_animated_object_a7f6848798f794ee44d794ec79c681b39} 
+virtual void animate (\begin{DoxyParamCaption}\item[{sf\+::\+Clock}]{clock}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Wirtualna metoda odpowiedzialna za animacje obiektu. 
+
+Metoda ta powinna zostac zaimplementowana w klasach dziedziczacych i zawierac logike animacji oparta na zegarze SFML. 
+\begin{DoxyParams}{Parameters}
+{\em clock} & Clock sluzacy do kontrolowania czasu animacji.\\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{class_player_a2a322ecc00612fba6bddc8349ac39a25}{Player}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Silnik\+\_\+2\+D/\mbox{\hyperlink{_animated_object_8h}{Animated\+Object.\+h}}\end{DoxyCompactItemize}

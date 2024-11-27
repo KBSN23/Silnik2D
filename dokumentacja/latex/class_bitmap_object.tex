@@ -1,0 +1,58 @@
+\doxysection{Bitmap\+Object Class Reference}
+\hypertarget{class_bitmap_object}{}\label{class_bitmap_object}\index{BitmapObject@{BitmapObject}}
+
+
+Klasa reprezentujaca obiekt bitmapowy.  
+
+
+
+
+{\ttfamily \#include $<$Bitmap\+Object.\+h$>$}
+
+Inheritance diagram for Bitmap\+Object\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=6.000000cm]{class_bitmap_object}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_drawable_object}{Drawable\+Object}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_drawable_object_a98c00e633cd218acf1a471df6a1b7c1c}{Drawable\+Object}} ()
+\begin{DoxyCompactList}\small\item\em Konstruktor domyslny klasy \doxylink{class_drawable_object}{Drawable\+Object}. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_drawable_object_a70f75f440c694809678dc13ab7e489ec}{draw}} (sf\+::\+Render\+Window \&window)=0
+\begin{DoxyCompactList}\small\item\em Wirtualna metoda odpowiedzialna za rysowanie obiektu. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_transformable_object}{Transformable\+Object}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_transformable_object_a8af667f84fb444cdb203b24e42462763}{Transformable\+Object}} ()
+\begin{DoxyCompactList}\small\item\em Konstruktor domyslny obiektu \doxylink{class_transformable_object}{Transformable\+Object}. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_transformable_object_a6c0e1ca41e3c11c2e6f7350afe03b076}{translate}} (sf\+::\+Vector2f translation\+Vector)=0
+\begin{DoxyCompactList}\small\item\em Przesuwa obiekt o okreslony wektor translacji. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_transformable_object_af77ce31fdde79fdce8d0aa9c6f3c3017}{rotate}} (float angle, const sf\+::\+Vector2f \&center)=0
+\begin{DoxyCompactList}\small\item\em Rotuje obiekt o okreslony kat wokol zadanego punktu. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_transformable_object_a608b1913d3c5ed5423f4c33bf3f65476}{scale}} (float factor, const sf\+::\+Vector2f \&center)=0
+\begin{DoxyCompactList}\small\item\em Skaluje obiekt o zadany wspolczynnik wokol zadanego punktu. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_updatable_object}{Updatable\+Object}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_updatable_object_a1b2fd65c4cbe05187c7484b886ac5c06}{Updatable\+Object}} ()
+\begin{DoxyCompactList}\small\item\em Konstruktor domyslny obiektu \doxylink{class_updatable_object}{Updatable\+Object}. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_updatable_object_a99b02345a8a15d3c5ea2844a2253f510}{update}} ()=0
+\begin{DoxyCompactList}\small\item\em Metoda odpowiedzialna za aktualizacje stanu obiektu. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_game_object}{Game\+Object}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_game_object_af43723c7731aca7124fac47e8d5d1809}{Game\+Object}} ()
+\begin{DoxyCompactList}\small\item\em Konstruktor domyslny klasy \doxylink{class_game_object}{Game\+Object}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Klasa reprezentujaca obiekt bitmapowy. 
+
+Klasa {\ttfamily \doxylink{class_bitmap_object}{Bitmap\+Object}} dziedziczy wirtualnie z {\ttfamily \doxylink{class_drawable_object}{Drawable\+Object}} i {\ttfamily \doxylink{class_transformable_object}{Transformable\+Object}}. Laczy funkcjonalnosci obiektow, ktore mozna rysowac oraz transformowac. Jest przeznaczona do reprezentowania bitmap w aplikacji, umozliwiajac ich rysowanie oraz modyfikacje polozenia, rotacji, czy skalowania 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Silnik\+\_\+2\+D/\mbox{\hyperlink{_bitmap_object_8h}{Bitmap\+Object.\+h}}\end{DoxyCompactItemize}

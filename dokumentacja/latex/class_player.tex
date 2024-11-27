@@ -1,0 +1,418 @@
+\doxysection{Player Class Reference}
+\hypertarget{class_player}{}\label{class_player}\index{Player@{Player}}
+
+
+Klasa reprezentujaca gracza w grze.  
+
+
+
+
+{\ttfamily \#include $<$Player.\+h$>$}
+
+Inheritance diagram for Player\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.869565cm]{class_player}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_player_ac576121ddd92bb9a1ade34c840803979}{Player}} (sf\+::\+Keyboard\+::\+Key up, sf\+::\+Keyboard\+::\+Key down, sf\+::\+Keyboard\+::\+Key left, sf\+::\+Keyboard\+::\+Key right)
+\begin{DoxyCompactList}\small\item\em Konstruktor klasy \doxylink{class_player}{Player}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_player_a5988b5eaec511af2f534d9da0d675593}{translate}} (Vector2f translation\+Vector) override
+\begin{DoxyCompactList}\small\item\em Przemieszcza gracza o zadany wektor. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_player_a8648293d1d47edb7082b44e0ca079516}{rotate}} (float angle, const Vector2f \&center) override
+\begin{DoxyCompactList}\small\item\em Obraca gracza o zadany kat wokol danego srodka. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_player_acaf883671d54203042eeec83d09be7de}{scale}} (float factor, const Vector2f \&center) override
+\begin{DoxyCompactList}\small\item\em Skalowanie gracza o zadany wspolczynnik wzgledem podanego srodka. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_player_ab2767a23ab2f455b13500f7903a64095}{draw}} (Render\+Window \&window) override
+\begin{DoxyCompactList}\small\item\em Rysuje obiekt gracza w oknie gry. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_player_a44137bb65de2396875934e48a6ee5099}{update}} () override
+\begin{DoxyCompactList}\small\item\em Aktualizuje stan gracza. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_player_a2a322ecc00612fba6bddc8349ac39a25}{animate}} (sf\+::\+Clock clock) override
+\begin{DoxyCompactList}\small\item\em Animuje obiekt gracza. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_player_a7a5379770a3d9a90ee4d827046d26eb0}{move\+Left}} ()
+\begin{DoxyCompactList}\small\item\em Funkcja odpowiedzialna za ruch gracza w lewo. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_player_a8f1aff0fabeb87f42932d5ce436f4d5c}{move\+Right}} ()
+\begin{DoxyCompactList}\small\item\em Funkcja odpowiedzialna za ruch gracza w prawo. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_player_a75e03afeaf9e13a6399279ed36c0c59f}{move\+Up}} ()
+\begin{DoxyCompactList}\small\item\em Funkcja odpowiedzialna za ruch gracza w gore. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_player_a486267210dfc8118e23e6b1bc6090286}{move\+Down}} ()
+\begin{DoxyCompactList}\small\item\em Funkcja odpowiedzialna za ruch gracza w dol. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_player_a8c528baf37154d347366083f0f816846}{stop}} ()
+\begin{DoxyCompactList}\small\item\em Funkcja odpowiedzialna za zatrzymanie gracza. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_player_a68c0b61b84e4e095b6463cadc275adae}{move}} ()
+\begin{DoxyCompactList}\small\item\em Wywoluje odpowiednia metode ruchu w zaleznosci od biezacego kierunku. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_shape_object}{Shape\+Object}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_shape_object_a231997eb29277fa06d537cb429b24e6c}{Shape\+Object}} ()
+\begin{DoxyCompactList}\small\item\em Konstruktor domyslny klasy \doxylink{class_shape_object}{Shape\+Object}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_drawable_object}{Drawable\+Object}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_drawable_object_a98c00e633cd218acf1a471df6a1b7c1c}{Drawable\+Object}} ()
+\begin{DoxyCompactList}\small\item\em Konstruktor domyslny klasy \doxylink{class_drawable_object}{Drawable\+Object}. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_drawable_object_a70f75f440c694809678dc13ab7e489ec}{draw}} (sf\+::\+Render\+Window \&window)=0
+\begin{DoxyCompactList}\small\item\em Wirtualna metoda odpowiedzialna za rysowanie obiektu. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_transformable_object}{Transformable\+Object}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_transformable_object_a8af667f84fb444cdb203b24e42462763}{Transformable\+Object}} ()
+\begin{DoxyCompactList}\small\item\em Konstruktor domyslny obiektu \doxylink{class_transformable_object}{Transformable\+Object}. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_transformable_object_a6c0e1ca41e3c11c2e6f7350afe03b076}{translate}} (sf\+::\+Vector2f translation\+Vector)=0
+\begin{DoxyCompactList}\small\item\em Przesuwa obiekt o okreslony wektor translacji. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_transformable_object_af77ce31fdde79fdce8d0aa9c6f3c3017}{rotate}} (float angle, const sf\+::\+Vector2f \&center)=0
+\begin{DoxyCompactList}\small\item\em Rotuje obiekt o okreslony kat wokol zadanego punktu. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_transformable_object_a608b1913d3c5ed5423f4c33bf3f65476}{scale}} (float factor, const sf\+::\+Vector2f \&center)=0
+\begin{DoxyCompactList}\small\item\em Skaluje obiekt o zadany wspolczynnik wokol zadanego punktu. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_updatable_object}{Updatable\+Object}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_updatable_object_a1b2fd65c4cbe05187c7484b886ac5c06}{Updatable\+Object}} ()
+\begin{DoxyCompactList}\small\item\em Konstruktor domyslny obiektu \doxylink{class_updatable_object}{Updatable\+Object}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_game_object}{Game\+Object}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_game_object_af43723c7731aca7124fac47e8d5d1809}{Game\+Object}} ()
+\begin{DoxyCompactList}\small\item\em Konstruktor domyslny klasy \doxylink{class_game_object}{Game\+Object}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+sf\+::\+Keyboard\+::\+Key \mbox{\hyperlink{class_player_a86730b87cfe7e5e642fbeba6f2fa4595}{left\+Key}}
+\begin{DoxyCompactList}\small\item\em Klawisze sterujace ruchem gracza. \end{DoxyCompactList}\item 
+sf\+::\+Keyboard\+::\+Key \mbox{\hyperlink{class_player_a707779b9ade3ab6a1a31e38bb02b0ba9}{right\+Key}}
+\item 
+sf\+::\+Keyboard\+::\+Key \mbox{\hyperlink{class_player_ae3ab4882322cca4d21b2da930a4aba5f}{up\+Key}}
+\item 
+sf\+::\+Keyboard\+::\+Key \mbox{\hyperlink{class_player_a9138a38c7cfd277812f69de4ac9a4155}{down\+Key}}
+\item 
+Vector2f \mbox{\hyperlink{class_player_a896a73b32e88abb93fcdf9f0f430a30e}{coords}}
+\begin{DoxyCompactList}\small\item\em Wspolrzedne gracza w przestrzeni 2D. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_player_a886d551d5381dc3e53f17825ffc51641}{direction}} = 1
+\begin{DoxyCompactList}\small\item\em Kierunek poruszania sie gracza. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_player_a420415c6b665fb9669a388e0e96ceb02}{is\+Moving}} = false
+\begin{DoxyCompactList}\small\item\em Flaga okreslajaca, czy gracz jest w ruchu. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Klasa reprezentujaca gracza w grze. 
+
+Klasa {\ttfamily \doxylink{class_player}{Player}} dziedziczy wirtualnie z {\ttfamily \doxylink{class_shape_object}{Shape\+Object}} i {\ttfamily \doxylink{class_sprite_object}{Sprite\+Object}}. Oferuje funkcjonalnosci zwiazane z poruszaniem sie, animacja oraz rysowaniem obiektu gracza. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_player_ac576121ddd92bb9a1ade34c840803979}\index{Player@{Player}!Player@{Player}}
+\index{Player@{Player}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{Player()}{Player()}}
+{\footnotesize\ttfamily \label{class_player_ac576121ddd92bb9a1ade34c840803979} 
+\mbox{\hyperlink{class_player}{Player}} (\begin{DoxyParamCaption}\item[{sf\+::\+Keyboard\+::\+Key}]{up}{, }\item[{sf\+::\+Keyboard\+::\+Key}]{down}{, }\item[{sf\+::\+Keyboard\+::\+Key}]{left}{, }\item[{sf\+::\+Keyboard\+::\+Key}]{right}{}\end{DoxyParamCaption})}
+
+
+
+Konstruktor klasy \doxylink{class_player}{Player}. 
+
+Inicjalizuje obiekt gracza i przypisuje klawisze sterujace. 
+\begin{DoxyParams}{Parameters}
+{\em up} & Klawisz odpowiadajacy za ruch w gore.\\
+\hline
+{\em down} & Klawisz odpowiadajacy za ruch w dol.\\
+\hline
+{\em left} & Klawisz odpowiadajacy za ruch w lewo.\\
+\hline
+{\em right} & Klawisz odpowiadajacy za ruch w prawo.\\
+\hline
+\end{DoxyParams}
+
+
+Inicjalizuje gracza z przypisanymi klawiszami do poruszania sie oraz poczatkowymi wspolrzednymi (0, 0). 
+\begin{DoxyParams}{Parameters}
+{\em up} & Klawisz ruchu w gore.\\
+\hline
+{\em down} & Klawisz ruchu w dol.\\
+\hline
+{\em left} & Klawisz ruchu w lewo.\\
+\hline
+{\em right} & Klawisz ruchu w prawo.\\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_player_a2a322ecc00612fba6bddc8349ac39a25}\index{Player@{Player}!animate@{animate}}
+\index{animate@{animate}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{animate()}{animate()}}
+{\footnotesize\ttfamily \label{class_player_a2a322ecc00612fba6bddc8349ac39a25} 
+void animate (\begin{DoxyParamCaption}\item[{sf\+::\+Clock}]{clock}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Animuje obiekt gracza. 
+
+Animuje gracza w zaleznosci od jego kierunku ruchu.
+
+
+\begin{DoxyParams}{Parameters}
+{\em clock} & Clock wykorzystywany do kontrolowania czasu animacji.\\
+\hline
+\end{DoxyParams}
+
+
+£aduje odpowiednia grafike na podstawie aktualnego kierunku ruchu i stanu poruszania siê. 
+\begin{DoxyParams}{Parameters}
+{\em clock} & Zegar uzywany do obliczania klatki animacji.\\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_animated_object_a7f6848798f794ee44d794ec79c681b39}{Animated\+Object}}.
+
+\Hypertarget{class_player_ab2767a23ab2f455b13500f7903a64095}\index{Player@{Player}!draw@{draw}}
+\index{draw@{draw}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily \label{class_player_ab2767a23ab2f455b13500f7903a64095} 
+void draw (\begin{DoxyParamCaption}\item[{Render\+Window \&}]{window}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}}
+
+
+
+Rysuje obiekt gracza w oknie gry. 
+
+Rysuje gracza na oknie.
+
+
+\begin{DoxyParams}{Parameters}
+{\em window} & Okno w ktorym obiekt zostanie narysowany.\\
+\hline
+\end{DoxyParams}
+
+
+Wywoluje funkcje odpowiedzialna za poruszanie sie oraz wyswietla odpowiednia grafike gracza. 
+\begin{DoxyParams}{Parameters}
+{\em window} & Okno, w ktorym gracz jest rysowany.\\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_player_a68c0b61b84e4e095b6463cadc275adae}\index{Player@{Player}!move@{move}}
+\index{move@{move}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{move()}{move()}}
+{\footnotesize\ttfamily \label{class_player_a68c0b61b84e4e095b6463cadc275adae} 
+void move (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Wywoluje odpowiednia metode ruchu w zaleznosci od biezacego kierunku. 
+
+Porusza gracza w aktualnym kierunku.
+
+Jesli gracz osi¹gnie granice ekranu, jego wspó³rzêdne s¹ resetowane, aby "{}pojawil sie"{} po drugiej stronie. \Hypertarget{class_player_a486267210dfc8118e23e6b1bc6090286}\index{Player@{Player}!moveDown@{moveDown}}
+\index{moveDown@{moveDown}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{moveDown()}{moveDown()}}
+{\footnotesize\ttfamily \label{class_player_a486267210dfc8118e23e6b1bc6090286} 
+void move\+Down (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Funkcja odpowiedzialna za ruch gracza w dol. 
+
+Ustawia kierunek ruchu w dol. \Hypertarget{class_player_a7a5379770a3d9a90ee4d827046d26eb0}\index{Player@{Player}!moveLeft@{moveLeft}}
+\index{moveLeft@{moveLeft}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{moveLeft()}{moveLeft()}}
+{\footnotesize\ttfamily \label{class_player_a7a5379770a3d9a90ee4d827046d26eb0} 
+void move\+Left (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Funkcja odpowiedzialna za ruch gracza w lewo. 
+
+Ustawia kierunek ruchu w lewo. \Hypertarget{class_player_a8f1aff0fabeb87f42932d5ce436f4d5c}\index{Player@{Player}!moveRight@{moveRight}}
+\index{moveRight@{moveRight}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{moveRight()}{moveRight()}}
+{\footnotesize\ttfamily \label{class_player_a8f1aff0fabeb87f42932d5ce436f4d5c} 
+void move\+Right (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Funkcja odpowiedzialna za ruch gracza w prawo. 
+
+Ustawia kierunek ruchu w prawo. \Hypertarget{class_player_a75e03afeaf9e13a6399279ed36c0c59f}\index{Player@{Player}!moveUp@{moveUp}}
+\index{moveUp@{moveUp}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{moveUp()}{moveUp()}}
+{\footnotesize\ttfamily \label{class_player_a75e03afeaf9e13a6399279ed36c0c59f} 
+void move\+Up (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Funkcja odpowiedzialna za ruch gracza w gore. 
+
+Ustawia kierunek ruchu w gory. \Hypertarget{class_player_a8648293d1d47edb7082b44e0ca079516}\index{Player@{Player}!rotate@{rotate}}
+\index{rotate@{rotate}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{rotate()}{rotate()}}
+{\footnotesize\ttfamily \label{class_player_a8648293d1d47edb7082b44e0ca079516} 
+void rotate (\begin{DoxyParamCaption}\item[{float}]{angle}{, }\item[{const Vector2f \&}]{center}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}}
+
+
+
+Obraca gracza o zadany kat wokol danego srodka. 
+
+Obraca gracza o podany kat wzgledem punktu.
+
+
+\begin{DoxyParams}{Parameters}
+{\em angle} & Kat obrotu w stopniach.\\
+\hline
+{\em center} & Punkt, wokol ktorego nastepuje obrot.\\
+\hline
+\end{DoxyParams}
+
+
+
+\begin{DoxyParams}{Parameters}
+{\em angle} & Kat obrotu w stopniach.\\
+\hline
+{\em center} & Punkt centralny obrotu.\\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_player_acaf883671d54203042eeec83d09be7de}\index{Player@{Player}!scale@{scale}}
+\index{scale@{scale}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{scale()}{scale()}}
+{\footnotesize\ttfamily \label{class_player_acaf883671d54203042eeec83d09be7de} 
+void scale (\begin{DoxyParamCaption}\item[{float}]{factor}{, }\item[{const Vector2f \&}]{center}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}}
+
+
+
+Skalowanie gracza o zadany wspolczynnik wzgledem podanego srodka. 
+
+Skaluje gracza wzgledem danego punktu.
+
+
+\begin{DoxyParams}{Parameters}
+{\em factor} & Wspolczynnik skalowania.\\
+\hline
+{\em center} & Punkt odniesienia do skalowania.\\
+\hline
+\end{DoxyParams}
+
+
+
+\begin{DoxyParams}{Parameters}
+{\em factor} & Wspolczynnik skalowania.\\
+\hline
+{\em center} & Punkt centralny skalowania.\\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_player_a8c528baf37154d347366083f0f816846}\index{Player@{Player}!stop@{stop}}
+\index{stop@{stop}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{stop()}{stop()}}
+{\footnotesize\ttfamily \label{class_player_a8c528baf37154d347366083f0f816846} 
+void stop (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Funkcja odpowiedzialna za zatrzymanie gracza. 
+
+Zatrzymuje ruch gracza. \Hypertarget{class_player_a5988b5eaec511af2f534d9da0d675593}\index{Player@{Player}!translate@{translate}}
+\index{translate@{translate}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{translate()}{translate()}}
+{\footnotesize\ttfamily \label{class_player_a5988b5eaec511af2f534d9da0d675593} 
+void translate (\begin{DoxyParamCaption}\item[{Vector2f}]{translation\+Vector}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}}
+
+
+
+Przemieszcza gracza o zadany wektor. 
+
+Przesuwa gracza o wektor translacji.
+
+
+\begin{DoxyParams}{Parameters}
+{\em translation\+Vector} & Wektor translacji.\\
+\hline
+\end{DoxyParams}
+
+
+
+\begin{DoxyParams}{Parameters}
+{\em translation\+Vector} & Wektor przesuniecia.\\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_player_a44137bb65de2396875934e48a6ee5099}\index{Player@{Player}!update@{update}}
+\index{update@{update}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily \label{class_player_a44137bb65de2396875934e48a6ee5099} 
+void update (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Aktualizuje stan gracza. 
+
+Metoda zawiera logike dotyczaca ruchu i innych interakcji gracza.
+
+Domyslnie laduje poczatkowa grafike gracza. 
+
+Implements \mbox{\hyperlink{class_updatable_object_a99b02345a8a15d3c5ea2844a2253f510}{Updatable\+Object}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_player_a896a73b32e88abb93fcdf9f0f430a30e}\index{Player@{Player}!coords@{coords}}
+\index{coords@{coords}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{coords}{coords}}
+{\footnotesize\ttfamily \label{class_player_a896a73b32e88abb93fcdf9f0f430a30e} 
+Vector2f coords}
+
+
+
+Wspolrzedne gracza w przestrzeni 2D. 
+
+\Hypertarget{class_player_a886d551d5381dc3e53f17825ffc51641}\index{Player@{Player}!direction@{direction}}
+\index{direction@{direction}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{direction}{direction}}
+{\footnotesize\ttfamily \label{class_player_a886d551d5381dc3e53f17825ffc51641} 
+int direction = 1}
+
+
+
+Kierunek poruszania sie gracza. 
+
+Wartosc 1 oznacza domyslny kierunek ruchu. \Hypertarget{class_player_a9138a38c7cfd277812f69de4ac9a4155}\index{Player@{Player}!downKey@{downKey}}
+\index{downKey@{downKey}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{downKey}{downKey}}
+{\footnotesize\ttfamily \label{class_player_a9138a38c7cfd277812f69de4ac9a4155} 
+sf\+::\+Keyboard\+::\+Key down\+Key}
+
+\Hypertarget{class_player_a420415c6b665fb9669a388e0e96ceb02}\index{Player@{Player}!isMoving@{isMoving}}
+\index{isMoving@{isMoving}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{isMoving}{isMoving}}
+{\footnotesize\ttfamily \label{class_player_a420415c6b665fb9669a388e0e96ceb02} 
+bool is\+Moving = false}
+
+
+
+Flaga okreslajaca, czy gracz jest w ruchu. 
+
+\Hypertarget{class_player_a86730b87cfe7e5e642fbeba6f2fa4595}\index{Player@{Player}!leftKey@{leftKey}}
+\index{leftKey@{leftKey}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{leftKey}{leftKey}}
+{\footnotesize\ttfamily \label{class_player_a86730b87cfe7e5e642fbeba6f2fa4595} 
+sf\+::\+Keyboard\+::\+Key left\+Key}
+
+
+
+Klawisze sterujace ruchem gracza. 
+
+\Hypertarget{class_player_a707779b9ade3ab6a1a31e38bb02b0ba9}\index{Player@{Player}!rightKey@{rightKey}}
+\index{rightKey@{rightKey}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{rightKey}{rightKey}}
+{\footnotesize\ttfamily \label{class_player_a707779b9ade3ab6a1a31e38bb02b0ba9} 
+sf\+::\+Keyboard\+::\+Key right\+Key}
+
+\Hypertarget{class_player_ae3ab4882322cca4d21b2da930a4aba5f}\index{Player@{Player}!upKey@{upKey}}
+\index{upKey@{upKey}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{upKey}{upKey}}
+{\footnotesize\ttfamily \label{class_player_ae3ab4882322cca4d21b2da930a4aba5f} 
+sf\+::\+Keyboard\+::\+Key up\+Key}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Silnik\+\_\+2\+D/\mbox{\hyperlink{_player_8h}{Player.\+h}}\item 
+Silnik\+\_\+2\+D/\mbox{\hyperlink{_player_8cpp}{Player.\+cpp}}\end{DoxyCompactItemize}

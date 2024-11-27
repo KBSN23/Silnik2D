@@ -1,0 +1,70 @@
+\doxysection{Drawable\+Object Class Reference}
+\hypertarget{class_drawable_object}{}\label{class_drawable_object}\index{DrawableObject@{DrawableObject}}
+
+
+Klasa bazowa dla obiektow, ktore moga byc rysowane.  
+
+
+
+
+{\ttfamily \#include $<$Drawable\+Object.\+h$>$}
+
+Inheritance diagram for Drawable\+Object\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{class_drawable_object}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_drawable_object_a98c00e633cd218acf1a471df6a1b7c1c}{Drawable\+Object}} ()
+\begin{DoxyCompactList}\small\item\em Konstruktor domyslny klasy \doxylink{class_drawable_object}{Drawable\+Object}. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_drawable_object_a70f75f440c694809678dc13ab7e489ec}{draw}} (sf\+::\+Render\+Window \&window)=0
+\begin{DoxyCompactList}\small\item\em Wirtualna metoda odpowiedzialna za rysowanie obiektu. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Klasa bazowa dla obiektow, ktore moga byc rysowane. 
+
+Klasa {\ttfamily \doxylink{class_drawable_object}{Drawable\+Object}} definiuje interfejs dla wszystkich obiektow, ktore maja mozliwosc rysowania w oknie SFML.\+Jest to klasa abstrakcyjna, zawierajaca jedna metode czysto wirtualna {\ttfamily draw}. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_drawable_object_a98c00e633cd218acf1a471df6a1b7c1c}\index{DrawableObject@{DrawableObject}!DrawableObject@{DrawableObject}}
+\index{DrawableObject@{DrawableObject}!DrawableObject@{DrawableObject}}
+\doxysubsubsection{\texorpdfstring{DrawableObject()}{DrawableObject()}}
+{\footnotesize\ttfamily \label{class_drawable_object_a98c00e633cd218acf1a471df6a1b7c1c} 
+\mbox{\hyperlink{class_drawable_object}{Drawable\+Object}} (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Konstruktor domyslny klasy \doxylink{class_drawable_object}{Drawable\+Object}. 
+
+Klasa bazowa reprezentujaca obiekt, ktory mozna narysowac.
+
+Konstruktor inicjalizuje obiekt, ktory moze byc rysowany. Moze byc rozszerzany w klasach pochodnych.
+
+Klasa \doxylink{class_drawable_object}{Drawable\+Object} moze byc podstawa dla innych klas, ktore implementuja funkcje rysowania w graficznym interfejsie uzytkownika. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_drawable_object_a70f75f440c694809678dc13ab7e489ec}\index{DrawableObject@{DrawableObject}!draw@{draw}}
+\index{draw@{draw}!DrawableObject@{DrawableObject}}
+\doxysubsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily \label{class_drawable_object_a70f75f440c694809678dc13ab7e489ec} 
+virtual void draw (\begin{DoxyParamCaption}\item[{sf\+::\+Render\+Window \&}]{window}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Wirtualna metoda odpowiedzialna za rysowanie obiektu. 
+
+Metoda musi byc zaimplementowana w klasach pochodnych. 
+\begin{DoxyParams}{Parameters}
+{\em window} & Okno w ktorym obiekt bedzie rysowany.\\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Silnik\+\_\+2\+D/\mbox{\hyperlink{_drawable_object_8h}{Drawable\+Object.\+h}}\item 
+Silnik\+\_\+2\+D/\mbox{\hyperlink{_drawable_object_8cpp}{Drawable\+Object.\+cpp}}\end{DoxyCompactItemize}

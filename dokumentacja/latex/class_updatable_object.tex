@@ -1,0 +1,74 @@
+\doxysection{Updatable\+Object Class Reference}
+\hypertarget{class_updatable_object}{}\label{class_updatable_object}\index{UpdatableObject@{UpdatableObject}}
+
+
+Klasa abstrakcyjna reprezentujaca obiekt, ktory moze byc aktualizowany.  
+
+
+
+
+{\ttfamily \#include $<$Updatable\+Object.\+h$>$}
+
+Inheritance diagram for Updatable\+Object\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=6.000000cm]{class_updatable_object}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_updatable_object_a1b2fd65c4cbe05187c7484b886ac5c06}{Updatable\+Object}} ()
+\begin{DoxyCompactList}\small\item\em Konstruktor domyslny obiektu \doxylink{class_updatable_object}{Updatable\+Object}. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_updatable_object_a99b02345a8a15d3c5ea2844a2253f510}{update}} ()=0
+\begin{DoxyCompactList}\small\item\em Metoda odpowiedzialna za aktualizacje stanu obiektu. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_game_object}{Game\+Object}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_game_object_af43723c7731aca7124fac47e8d5d1809}{Game\+Object}} ()
+\begin{DoxyCompactList}\small\item\em Konstruktor domyslny klasy \doxylink{class_game_object}{Game\+Object}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Klasa abstrakcyjna reprezentujaca obiekt, ktory moze byc aktualizowany. 
+
+Klasa ta dziedziczy po klasie \doxylink{class_game_object}{Game\+Object}, umozliwiajac obiektom aktualizacje ich stanu w ramach gry lub aplikacji.\+Klasa jest abstrakcyjna, a konkretne implementacje metody update musza zostac zdefiniowane w klasach pochodnych. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_updatable_object_a1b2fd65c4cbe05187c7484b886ac5c06}\index{UpdatableObject@{UpdatableObject}!UpdatableObject@{UpdatableObject}}
+\index{UpdatableObject@{UpdatableObject}!UpdatableObject@{UpdatableObject}}
+\doxysubsubsection{\texorpdfstring{UpdatableObject()}{UpdatableObject()}}
+{\footnotesize\ttfamily \label{class_updatable_object_a1b2fd65c4cbe05187c7484b886ac5c06} 
+\mbox{\hyperlink{class_updatable_object}{Updatable\+Object}} (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Konstruktor domyslny obiektu \doxylink{class_updatable_object}{Updatable\+Object}. 
+
+Konstruktor domyslny klasy \doxylink{class_updatable_object}{Updatable\+Object}.
+
+Inicjalizuje obiekt w sposob standardowy. Konkretne ustawienia obiektu zaleza od klasy pochodnej.
+
+Klasa \doxylink{class_updatable_object}{Updatable\+Object} dziedziczy z \doxylink{class_game_object}{Game\+Object} i reprezentuje obiekty, ktore moga byc aktualizowane w trakcie dzialania gry.\+Konstruktor inicjalizuje obiekt bazowy \doxylink{class_game_object}{Game\+Object}. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_updatable_object_a99b02345a8a15d3c5ea2844a2253f510}\index{UpdatableObject@{UpdatableObject}!update@{update}}
+\index{update@{update}!UpdatableObject@{UpdatableObject}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily \label{class_updatable_object_a99b02345a8a15d3c5ea2844a2253f510} 
+virtual void update (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Metoda odpowiedzialna za aktualizacje stanu obiektu. 
+
+Ta metoda musi zostac zaimplementowana w klasach pochodnych, aby umozliwic aktualizacje stanu obiektu w trakcie dzialania gry lub aplikacji. 
+
+Implemented in \mbox{\hyperlink{class_line_segment_a44137bb65de2396875934e48a6ee5099}{Line\+Segment}}, \mbox{\hyperlink{class_player_a44137bb65de2396875934e48a6ee5099}{Player}}, and \mbox{\hyperlink{class_point2_d_a44137bb65de2396875934e48a6ee5099}{Point2D}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Silnik\+\_\+2\+D/\mbox{\hyperlink{_updatable_object_8h}{Updatable\+Object.\+h}}\item 
+Silnik\+\_\+2\+D/\mbox{\hyperlink{_updatable_object_8cpp}{Updatable\+Object.\+cpp}}\end{DoxyCompactItemize}

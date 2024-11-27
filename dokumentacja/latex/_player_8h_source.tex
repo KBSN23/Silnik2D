@@ -1,0 +1,38 @@
+\doxysection{Player.\+h}
+\hypertarget{_player_8h_source}{}\label{_player_8h_source}\index{Silnik\_2D/Player.h@{Silnik\_2D/Player.h}}
+\mbox{\hyperlink{_player_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_shape_object_8h}{ShapeObject.h}}"{}}}
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_sprite_object_8h}{SpriteObject.h}}"{}}}
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <SFML/Graphics.hpp>}}
+\DoxyCodeLine{00005\ }
+\DoxyCodeLine{00006\ \textcolor{keyword}{using\ namespace\ }sf;}
+\DoxyCodeLine{00011\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_player}{Player}}\ :\ \textcolor{keyword}{public}\ \textcolor{keyword}{virtual}\ \mbox{\hyperlink{class_shape_object}{ShapeObject}}\ ,\ \textcolor{keyword}{public}\ \textcolor{keyword}{virtual}\ \mbox{\hyperlink{class_sprite_object}{SpriteObject}}}
+\DoxyCodeLine{00012\ \{}
+\DoxyCodeLine{00013\ }
+\DoxyCodeLine{00014\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00016\ \ \ \ \ sf::Keyboard::Key\ \mbox{\hyperlink{class_player_a86730b87cfe7e5e642fbeba6f2fa4595}{leftKey}};}
+\DoxyCodeLine{00017\ \ \ \ \ sf::Keyboard::Key\ \mbox{\hyperlink{class_player_a707779b9ade3ab6a1a31e38bb02b0ba9}{rightKey}};}
+\DoxyCodeLine{00018\ \ \ \ \ sf::Keyboard::Key\ \mbox{\hyperlink{class_player_ae3ab4882322cca4d21b2da930a4aba5f}{upKey}};}
+\DoxyCodeLine{00019\ \ \ \ \ sf::Keyboard::Key\ \mbox{\hyperlink{class_player_a9138a38c7cfd277812f69de4ac9a4155}{downKey}};}
+\DoxyCodeLine{00021\ \ \ \ \ Vector2f\ \mbox{\hyperlink{class_player_a896a73b32e88abb93fcdf9f0f430a30e}{coords}};}
+\DoxyCodeLine{00025\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_player_a886d551d5381dc3e53f17825ffc51641}{direction}}\ =\ 1;}
+\DoxyCodeLine{00027\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_player_a420415c6b665fb9669a388e0e96ceb02}{isMoving}}\ =\ \textcolor{keyword}{false};}
+\DoxyCodeLine{00035\ \ \ \ \ \mbox{\hyperlink{class_player_ac576121ddd92bb9a1ade34c840803979}{Player}}(sf::Keyboard::Key\ up,\ sf::Keyboard::Key\ down,\ sf::Keyboard::Key\ left,\ sf::Keyboard::Key\ right);}
+\DoxyCodeLine{00039\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_player_a5988b5eaec511af2f534d9da0d675593}{translate}}(Vector2f\ translationVector)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00044\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_player_a8648293d1d47edb7082b44e0ca079516}{rotate}}(\textcolor{keywordtype}{float}\ angle,\ \textcolor{keyword}{const}\ Vector2f\&\ center)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00049\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_player_acaf883671d54203042eeec83d09be7de}{scale}}(\textcolor{keywordtype}{float}\ factor,\ \textcolor{keyword}{const}\ Vector2f\&\ center)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00053\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_player_ab2767a23ab2f455b13500f7903a64095}{draw}}(RenderWindow\&\ window)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00057\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_player_a44137bb65de2396875934e48a6ee5099}{update}}()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00061\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_player_a2a322ecc00612fba6bddc8349ac39a25}{animate}}(sf::Clock\ clock)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00063\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_player_a7a5379770a3d9a90ee4d827046d26eb0}{moveLeft}}();}
+\DoxyCodeLine{00065\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_player_a8f1aff0fabeb87f42932d5ce436f4d5c}{moveRight}}();}
+\DoxyCodeLine{00067\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_player_a75e03afeaf9e13a6399279ed36c0c59f}{moveUp}}();}
+\DoxyCodeLine{00069\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_player_a486267210dfc8118e23e6b1bc6090286}{moveDown}}();}
+\DoxyCodeLine{00071\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_player_a8c528baf37154d347366083f0f816846}{stop}}();}
+\DoxyCodeLine{00073\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_player_a68c0b61b84e4e095b6463cadc275adae}{move}}();}
+\DoxyCodeLine{00074\ \};}
+\DoxyCodeLine{00075\ }
+
+\end{DoxyCode}

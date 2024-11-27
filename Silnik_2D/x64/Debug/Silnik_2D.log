@@ -1,0 +1,53 @@
+﻿  AnimatedObject.cpp
+  BitmapHandler.cpp
+  BitmapObject.cpp
+  DrawableObject.cpp
+  Engine.cpp
+C:\Users\sylwi\Desktop\Silnik_2D\Silnik_2D\Engine.cpp(163,56): warning C4244: "argument": konwersja z "T" do "T", możliwa utrata danych
+C:\Users\sylwi\Desktop\Silnik_2D\Silnik_2D\Engine.cpp(163,56): warning C4244:         with
+C:\Users\sylwi\Desktop\Silnik_2D\Silnik_2D\Engine.cpp(163,56): warning C4244:         [
+C:\Users\sylwi\Desktop\Silnik_2D\Silnik_2D\Engine.cpp(163,56): warning C4244:             T=int
+C:\Users\sylwi\Desktop\Silnik_2D\Silnik_2D\Engine.cpp(163,56): warning C4244:         ]
+C:\Users\sylwi\Desktop\Silnik_2D\Silnik_2D\Engine.cpp(163,56): warning C4244:         and
+C:\Users\sylwi\Desktop\Silnik_2D\Silnik_2D\Engine.cpp(163,56): warning C4244:         [
+C:\Users\sylwi\Desktop\Silnik_2D\Silnik_2D\Engine.cpp(163,56): warning C4244:             T=float
+C:\Users\sylwi\Desktop\Silnik_2D\Silnik_2D\Engine.cpp(163,56): warning C4244:         ]
+C:\Users\sylwi\Desktop\Silnik_2D\Silnik_2D\Engine.cpp(163,44): warning C4244: "argument": konwersja z "T" do "T", możliwa utrata danych
+C:\Users\sylwi\Desktop\Silnik_2D\Silnik_2D\Engine.cpp(163,44): warning C4244:         with
+C:\Users\sylwi\Desktop\Silnik_2D\Silnik_2D\Engine.cpp(163,44): warning C4244:         [
+C:\Users\sylwi\Desktop\Silnik_2D\Silnik_2D\Engine.cpp(163,44): warning C4244:             T=int
+C:\Users\sylwi\Desktop\Silnik_2D\Silnik_2D\Engine.cpp(163,44): warning C4244:         ]
+C:\Users\sylwi\Desktop\Silnik_2D\Silnik_2D\Engine.cpp(163,44): warning C4244:         and
+C:\Users\sylwi\Desktop\Silnik_2D\Silnik_2D\Engine.cpp(163,44): warning C4244:         [
+C:\Users\sylwi\Desktop\Silnik_2D\Silnik_2D\Engine.cpp(163,44): warning C4244:             T=float
+C:\Users\sylwi\Desktop\Silnik_2D\Silnik_2D\Engine.cpp(163,44): warning C4244:         ]
+C:\Users\sylwi\Desktop\Silnik_2D\Silnik_2D\Engine.cpp(169,63): warning C4244: "argument": konwersja z "T" do "T", możliwa utrata danych
+C:\Users\sylwi\Desktop\Silnik_2D\Silnik_2D\Engine.cpp(169,63): warning C4244:         with
+C:\Users\sylwi\Desktop\Silnik_2D\Silnik_2D\Engine.cpp(169,63): warning C4244:         [
+C:\Users\sylwi\Desktop\Silnik_2D\Silnik_2D\Engine.cpp(169,63): warning C4244:             T=int
+C:\Users\sylwi\Desktop\Silnik_2D\Silnik_2D\Engine.cpp(169,63): warning C4244:         ]
+C:\Users\sylwi\Desktop\Silnik_2D\Silnik_2D\Engine.cpp(169,63): warning C4244:         and
+C:\Users\sylwi\Desktop\Silnik_2D\Silnik_2D\Engine.cpp(169,63): warning C4244:         [
+C:\Users\sylwi\Desktop\Silnik_2D\Silnik_2D\Engine.cpp(169,63): warning C4244:             T=float
+C:\Users\sylwi\Desktop\Silnik_2D\Silnik_2D\Engine.cpp(169,63): warning C4244:         ]
+C:\Users\sylwi\Desktop\Silnik_2D\Silnik_2D\Engine.cpp(169,52): warning C4244: "argument": konwersja z "T" do "T", możliwa utrata danych
+C:\Users\sylwi\Desktop\Silnik_2D\Silnik_2D\Engine.cpp(169,52): warning C4244:         with
+C:\Users\sylwi\Desktop\Silnik_2D\Silnik_2D\Engine.cpp(169,52): warning C4244:         [
+C:\Users\sylwi\Desktop\Silnik_2D\Silnik_2D\Engine.cpp(169,52): warning C4244:             T=int
+C:\Users\sylwi\Desktop\Silnik_2D\Silnik_2D\Engine.cpp(169,52): warning C4244:         ]
+C:\Users\sylwi\Desktop\Silnik_2D\Silnik_2D\Engine.cpp(169,52): warning C4244:         and
+C:\Users\sylwi\Desktop\Silnik_2D\Silnik_2D\Engine.cpp(169,52): warning C4244:         [
+C:\Users\sylwi\Desktop\Silnik_2D\Silnik_2D\Engine.cpp(169,52): warning C4244:             T=float
+C:\Users\sylwi\Desktop\Silnik_2D\Silnik_2D\Engine.cpp(169,52): warning C4244:         ]
+  GameObject.cpp
+  LineSegment.cpp
+C:\Users\sylwi\Desktop\Silnik_2D\Silnik_2D\LineSegment.cpp(37,12): warning C4244: "inicjowanie": konwersja z "float" do "int", możliwa utrata danych
+C:\Users\sylwi\Desktop\Silnik_2D\Silnik_2D\LineSegment.cpp(38,12): warning C4244: "inicjowanie": konwersja z "float" do "int", możliwa utrata danych
+  Player.cpp
+  Point2D.cpp
+  PrimitiveRenderer.cpp
+  ShapeObject.cpp
+  Silnik_2D.cpp
+  SpriteObject.cpp
+  Generowanie kodu...
+  Silnik_2D.vcxproj -> C:\Users\sylwi\Desktop\Silnik_2D\x64\Debug\Silnik_2D.exe

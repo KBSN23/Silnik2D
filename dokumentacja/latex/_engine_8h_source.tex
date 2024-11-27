@@ -1,0 +1,50 @@
+\doxysection{Engine.\+h}
+\hypertarget{_engine_8h_source}{}\label{_engine_8h_source}\index{Silnik\_2D/Engine.h@{Silnik\_2D/Engine.h}}
+\mbox{\hyperlink{_engine_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00002\ }
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ <SFML/Graphics.hpp>}}
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <SFML/Window.hpp>}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ <SFML/System.hpp>}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ <iostream>}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ <fstream>}}
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_player_8h}{Player.h}}"{}}}
+\DoxyCodeLine{00009\ }
+\DoxyCodeLine{00010\ \textcolor{keyword}{using\ namespace\ }std;}
+\DoxyCodeLine{00014\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_engine}{Engine}}}
+\DoxyCodeLine{00015\ \{}
+\DoxyCodeLine{00016\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00024\ \ \ \ \ \mbox{\hyperlink{class_engine_a4a85f135604eb0ecf7055ed9c7caee3e}{Engine}}(\textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{int}\ window\_width,\ \textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{int}\ window\_height,\ sf::Color\ clear\_color,\ \textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{int}\ frame\_limit,\ \textcolor{keywordtype}{bool}\ full\_screen);}
+\DoxyCodeLine{00028\ \ \ \ \ \mbox{\hyperlink{class_engine_a45936cce93ebf1bfdfd7ba305e03e864}{\string~Engine}}();}
+\DoxyCodeLine{00033\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_engine_ab3e7cc706c522b3231f9156bba461436}{initialize}}();}
+\DoxyCodeLine{00037\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_engine_a13a43e6d814de94978c515cb084873b1}{run}}();}
+\DoxyCodeLine{00041\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_engine_a58f0a6386e65ab215b79724a9cb87ca9}{events}}(\mbox{\hyperlink{class_player}{Player}}\&\ player);}
+\DoxyCodeLine{00045\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_engine_ac5c54df7ed3b930268c8d7752c101725}{update}}();}
+\DoxyCodeLine{00051\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_engine_a7aa9d52d504b7aa3d56e547495f92c2c}{render}}(\mbox{\hyperlink{class_player}{Player}}\&\ player,\ sf::Clock\ clock);}
+\DoxyCodeLine{00053\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_engine_a4b66d5e31b5dc18b314c8a68163263bd}{cleanup}}();}
+\DoxyCodeLine{00057\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_engine_af6394bf018136f73722ffe3df894250a}{logError}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{string}\&\ message);\ }
+\DoxyCodeLine{00058\ \ \ \ \ }
+\DoxyCodeLine{00059\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00061\ \ \ \ \ sf::RenderWindow\ window;}
+\DoxyCodeLine{00063\ \ \ \ \ sf::VideoMode\ videoMode;}
+\DoxyCodeLine{00065\ \ \ \ \ sf::Color\ clearColor;\ \ \ \ }
+\DoxyCodeLine{00067\ \ \ \ \ \textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{int}\ frameLimit;}
+\DoxyCodeLine{00069\ \ \ \ \ \textcolor{keywordtype}{bool}\ fullscreen;}
+\DoxyCodeLine{00071\ \ \ \ \ ofstream\ logFile;\ \ \ }
+\DoxyCodeLine{00073\ \ \ \ \ Vector2f\ lastMousePosition;}
+\DoxyCodeLine{00075\ \ \ \ \ \textcolor{keywordtype}{float}\ angle=\ 90;}
+\DoxyCodeLine{00077\ \ \ \ \ \textcolor{keywordtype}{bool}\ showLine\ =\ \textcolor{keyword}{false};}
+\DoxyCodeLine{00079\ \ \ \ \ \textcolor{keywordtype}{bool}\ showPolyline\ =\ \textcolor{keyword}{false};}
+\DoxyCodeLine{00081\ \ \ \ \ \textcolor{keywordtype}{bool}\ showPolygon\ =\ \textcolor{keyword}{false};}
+\DoxyCodeLine{00083\ \ \ \ \ \textcolor{keywordtype}{bool}\ showElipse\ =\ \textcolor{keyword}{false};}
+\DoxyCodeLine{00085\ \ \ \ \ \textcolor{keywordtype}{bool}\ showCircle\ =\ \textcolor{keyword}{false};}
+\DoxyCodeLine{00087\ \ \ \ \ \textcolor{keywordtype}{bool}\ fillShape\ =\ \textcolor{keyword}{false};}
+\DoxyCodeLine{00089\ \ \ \ \ \textcolor{keywordtype}{bool}\ rotate\ =\ \textcolor{keyword}{false};}
+\DoxyCodeLine{00091\ \ \ \ \ \textcolor{keywordtype}{bool}\ translate\ =\ \textcolor{keyword}{false};}
+\DoxyCodeLine{00093\ \ \ \ \ \textcolor{keywordtype}{bool}\ scale\ =\ \textcolor{keyword}{false};}
+\DoxyCodeLine{00095\ \ \ \ \ \textcolor{keywordtype}{bool}\ showPlayer\ =\ \textcolor{keyword}{false};}
+\DoxyCodeLine{00096\ \};}
+\DoxyCodeLine{00097\ }
+
+\end{DoxyCode}

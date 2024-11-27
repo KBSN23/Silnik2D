@@ -1,0 +1,23 @@
+\doxysection{Bitmap\+Handler.\+h}
+\hypertarget{_bitmap_handler_8h_source}{}\label{_bitmap_handler_8h_source}\index{Silnik\_2D/BitmapHandler.h@{Silnik\_2D/BitmapHandler.h}}
+\mbox{\hyperlink{_bitmap_handler_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#include\ <SFML/Graphics.hpp>}}
+\DoxyCodeLine{00010\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_bitmap_handler}{BitmapHandler}}}
+\DoxyCodeLine{00011\ \{}
+\DoxyCodeLine{00012\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00014\ \ \ \ \ \textcolor{keyword}{static}\ sf::Texture\ texture;}
+\DoxyCodeLine{00016\ \ \ \ \ \textcolor{keyword}{static}\ sf::Sprite\ sprite;}
+\DoxyCodeLine{00018\ \ \ \ \ \textcolor{keyword}{static}\ sf::Image\ image;}
+\DoxyCodeLine{00019\ }
+\DoxyCodeLine{00020\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00025\ \ \ \ \ \mbox{\hyperlink{class_bitmap_handler_a54c50e29ed4832e52509878368640991}{BitmapHandler}}()\ \{\};}
+\DoxyCodeLine{00031\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_bitmap_handler_a1853c23447b12f2d443ecc87500891af}{create}}(\textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{int}\ width,\ \textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{int}\ height,\ \textcolor{keyword}{const}\ sf::Color\&\ color\ =\ sf::Color::White);}
+\DoxyCodeLine{00035\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_bitmap_handler_a511b0192335a6bf0abe904b64dd14136}{loadFromFile}}(std::string\&\ filename);}
+\DoxyCodeLine{00039\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_bitmap_handler_a6f7461c178c4adca6f7a58ea38d7dfd4}{clear}}(\textcolor{keyword}{const}\ sf::Color\&\ color\ =\ sf::Color::Transparent);}
+\DoxyCodeLine{00044\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_bitmap_handler_afacd5584fa0f88a7c8ecfe09d46eb973}{display}}(sf::RenderWindow\&\ window,\ sf::Vector2f\ pos);}
+\DoxyCodeLine{00045\ \};}
+\DoxyCodeLine{00046\ }
+
+\end{DoxyCode}

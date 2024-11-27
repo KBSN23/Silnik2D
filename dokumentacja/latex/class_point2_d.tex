@@ -1,0 +1,304 @@
+\doxysection{Point2D Class Reference}
+\hypertarget{class_point2_d}{}\label{class_point2_d}\index{Point2D@{Point2D}}
+
+
+Klasa reprezentujaca punkt dwuwymiarowy w przestrzeni.  
+
+
+
+
+{\ttfamily \#include $<$Point2\+D.\+h$>$}
+
+Inheritance diagram for Point2D\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=5.000000cm]{class_point2_d}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_point2_d_adbb78b7f84456558171243549b03928c}{Point2D}} ()
+\begin{DoxyCompactList}\small\item\em Konstruktor domyslny klasy \doxylink{class_point2_d}{Point2D}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_point2_d_aa8a6958d9d2f37c6e213a3ffca294337}{Point2D}} (Vector2f coords, Color color)
+\begin{DoxyCompactList}\small\item\em Konstruktor klasy \doxylink{class_point2_d}{Point2D}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_point2_d_ab2767a23ab2f455b13500f7903a64095}{draw}} (Render\+Window \&window) override
+\begin{DoxyCompactList}\small\item\em Rysuje punkt w podanym oknie. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_point2_d_afbb0bc2f78749017bfccaec312fecbdf}{set\+Coords}} (Vector2f new\+Coords)
+\begin{DoxyCompactList}\small\item\em Ustawia nowe wspolrzedne punktu. \end{DoxyCompactList}\item 
+Vector2f \mbox{\hyperlink{class_point2_d_ae43c99739662b59049f6efcbeb7bf539}{get\+Coords}} ()
+\begin{DoxyCompactList}\small\item\em Zwraca aktualne wspolrzedne punktu. \end{DoxyCompactList}\item 
+Color \mbox{\hyperlink{class_point2_d_aceb91fa44d7301e20b96fb55801ba769}{get\+Color}} ()
+\begin{DoxyCompactList}\small\item\em Zwraca kolor punktu. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_point2_d_a5988b5eaec511af2f534d9da0d675593}{translate}} (Vector2f translation\+Vector) override
+\begin{DoxyCompactList}\small\item\em Przesuwa punkt o podany wektor translacji. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_point2_d_a8648293d1d47edb7082b44e0ca079516}{rotate}} (float angle, const Vector2f \&center) override
+\begin{DoxyCompactList}\small\item\em Obraca punkt wokol podanego punktu centralnego. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_point2_d_acaf883671d54203042eeec83d09be7de}{scale}} (float factor, const Vector2f \&center) override
+\begin{DoxyCompactList}\small\item\em Skaluje punkt wzgledem podanego punktu centralnego. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_point2_d_a44137bb65de2396875934e48a6ee5099}{update}} () override
+\begin{DoxyCompactList}\small\item\em Aktualizuje stan punktu. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_shape_object}{Shape\+Object}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_shape_object_a231997eb29277fa06d537cb429b24e6c}{Shape\+Object}} ()
+\begin{DoxyCompactList}\small\item\em Konstruktor domyslny klasy \doxylink{class_shape_object}{Shape\+Object}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_drawable_object}{Drawable\+Object}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_drawable_object_a98c00e633cd218acf1a471df6a1b7c1c}{Drawable\+Object}} ()
+\begin{DoxyCompactList}\small\item\em Konstruktor domyslny klasy \doxylink{class_drawable_object}{Drawable\+Object}. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_drawable_object_a70f75f440c694809678dc13ab7e489ec}{draw}} (sf\+::\+Render\+Window \&window)=0
+\begin{DoxyCompactList}\small\item\em Wirtualna metoda odpowiedzialna za rysowanie obiektu. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_transformable_object}{Transformable\+Object}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_transformable_object_a8af667f84fb444cdb203b24e42462763}{Transformable\+Object}} ()
+\begin{DoxyCompactList}\small\item\em Konstruktor domyslny obiektu \doxylink{class_transformable_object}{Transformable\+Object}. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_transformable_object_a6c0e1ca41e3c11c2e6f7350afe03b076}{translate}} (sf\+::\+Vector2f translation\+Vector)=0
+\begin{DoxyCompactList}\small\item\em Przesuwa obiekt o okreslony wektor translacji. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_transformable_object_af77ce31fdde79fdce8d0aa9c6f3c3017}{rotate}} (float angle, const sf\+::\+Vector2f \&center)=0
+\begin{DoxyCompactList}\small\item\em Rotuje obiekt o okreslony kat wokol zadanego punktu. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_transformable_object_a608b1913d3c5ed5423f4c33bf3f65476}{scale}} (float factor, const sf\+::\+Vector2f \&center)=0
+\begin{DoxyCompactList}\small\item\em Skaluje obiekt o zadany wspolczynnik wokol zadanego punktu. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_updatable_object}{Updatable\+Object}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_updatable_object_a1b2fd65c4cbe05187c7484b886ac5c06}{Updatable\+Object}} ()
+\begin{DoxyCompactList}\small\item\em Konstruktor domyslny obiektu \doxylink{class_updatable_object}{Updatable\+Object}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_game_object}{Game\+Object}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_game_object_af43723c7731aca7124fac47e8d5d1809}{Game\+Object}} ()
+\begin{DoxyCompactList}\small\item\em Konstruktor domyslny klasy \doxylink{class_game_object}{Game\+Object}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Klasa reprezentujaca punkt dwuwymiarowy w przestrzeni. 
+
+Dziedziczy po klasie \doxylink{class_shape_object}{Shape\+Object} i dodaje funkcjonalnosci zwiazane z rysowaniem, translacja, rotacja i skalowaniem punktu. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_point2_d_adbb78b7f84456558171243549b03928c}\index{Point2D@{Point2D}!Point2D@{Point2D}}
+\index{Point2D@{Point2D}!Point2D@{Point2D}}
+\doxysubsubsection{\texorpdfstring{Point2D()}{Point2D()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{class_point2_d_adbb78b7f84456558171243549b03928c} 
+\mbox{\hyperlink{class_point2_d}{Point2D}} (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Konstruktor domyslny klasy \doxylink{class_point2_d}{Point2D}. 
+
+Klasa reprezentujaca punkt w przestrzeni 2D.
+
+Klasa dziedziczy po \doxylink{class_shape_object}{Shape\+Object} i oferuje funkcjonalnosci zwiazane z rysowaniem, transformacjami geometrycznymi(translacja, rotacja, skalowanie) oraz zarzadzaniem pozycja i kolorem punktu. \Hypertarget{class_point2_d_aa8a6958d9d2f37c6e213a3ffca294337}\index{Point2D@{Point2D}!Point2D@{Point2D}}
+\index{Point2D@{Point2D}!Point2D@{Point2D}}
+\doxysubsubsection{\texorpdfstring{Point2D()}{Point2D()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{class_point2_d_aa8a6958d9d2f37c6e213a3ffca294337} 
+\mbox{\hyperlink{class_point2_d}{Point2D}} (\begin{DoxyParamCaption}\item[{Vector2f}]{coords}{, }\item[{Color}]{color}{}\end{DoxyParamCaption})}
+
+
+
+Konstruktor klasy \doxylink{class_point2_d}{Point2D}. 
+
+Konstruktor parametryczny.
+
+Inicjalizuje punkt z podanymi wspolrzednymi i kolorem. 
+\begin{DoxyParams}{Parameters}
+{\em coords} & Wspolrzedne punktu.\\
+\hline
+{\em color} & Kolor punktu.\\
+\hline
+\end{DoxyParams}
+
+
+Tworzy punkt w zadanych wspolrzednych i z okreslonym kolorem. 
+\begin{DoxyParams}{Parameters}
+{\em coords} & Wspolrzedne punktu w przestrzeni 2D.\\
+\hline
+{\em color} & Kolor punktu.\\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_point2_d_ab2767a23ab2f455b13500f7903a64095}\index{Point2D@{Point2D}!draw@{draw}}
+\index{draw@{draw}!Point2D@{Point2D}}
+\doxysubsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily \label{class_point2_d_ab2767a23ab2f455b13500f7903a64095} 
+void draw (\begin{DoxyParamCaption}\item[{Render\+Window \&}]{window}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}}
+
+
+
+Rysuje punkt w podanym oknie. 
+
+Rysuje punkt w oknie graficznym.
+
+
+\begin{DoxyParams}{Parameters}
+{\em window} & Referencja do okna, w ktorym punkt ma zostac narysowany.\\
+\hline
+\end{DoxyParams}
+
+
+Wykorzystuje klase \doxylink{class_primitive_renderer}{Primitive\+Renderer} do narysowania piksela w zadanych wspolrzednych i o okreslonym kolorze. 
+\begin{DoxyParams}{Parameters}
+{\em window} & Okno renderowania.\\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_point2_d_aceb91fa44d7301e20b96fb55801ba769}\index{Point2D@{Point2D}!getColor@{getColor}}
+\index{getColor@{getColor}!Point2D@{Point2D}}
+\doxysubsubsection{\texorpdfstring{getColor()}{getColor()}}
+{\footnotesize\ttfamily \label{class_point2_d_aceb91fa44d7301e20b96fb55801ba769} 
+Color get\+Color (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Zwraca kolor punktu. 
+
+Pobiera aktualny kolor punktu.
+
+\begin{DoxyReturn}{Returns}
+Kolor punktu jako obiekt Color.
+\end{DoxyReturn}
+\Hypertarget{class_point2_d_ae43c99739662b59049f6efcbeb7bf539}\index{Point2D@{Point2D}!getCoords@{getCoords}}
+\index{getCoords@{getCoords}!Point2D@{Point2D}}
+\doxysubsubsection{\texorpdfstring{getCoords()}{getCoords()}}
+{\footnotesize\ttfamily \label{class_point2_d_ae43c99739662b59049f6efcbeb7bf539} 
+Vector2f get\+Coords (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Zwraca aktualne wspolrzedne punktu. 
+
+Pobiera aktualne wspolrzedne punktu.
+
+\begin{DoxyReturn}{Returns}
+Wspolrzedne punktu jako obiekt Vector2f.
+\end{DoxyReturn}
+\Hypertarget{class_point2_d_a8648293d1d47edb7082b44e0ca079516}\index{Point2D@{Point2D}!rotate@{rotate}}
+\index{rotate@{rotate}!Point2D@{Point2D}}
+\doxysubsubsection{\texorpdfstring{rotate()}{rotate()}}
+{\footnotesize\ttfamily \label{class_point2_d_a8648293d1d47edb7082b44e0ca079516} 
+void rotate (\begin{DoxyParamCaption}\item[{float}]{angle}{, }\item[{const Vector2f \&}]{center}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}}
+
+
+
+Obraca punkt wokol podanego punktu centralnego. 
+
+Obraca punkt wokol zadanego centrum o okreslony kat.
+
+
+\begin{DoxyParams}{Parameters}
+{\em angle} & Kat obrotu w stopniach.\\
+\hline
+{\em center} & Punkt centralny obrotu.\\
+\hline
+\end{DoxyParams}
+
+
+Oblicza nowe wspolrzedne punktu na podstawie obrotu o zadany kat w stopniach wzgledem zadanego centrum. 
+\begin{DoxyParams}{Parameters}
+{\em angle} & Kat obrotu w stopniach.\\
+\hline
+{\em center} & Punkt, wzgledem ktorego wykonywany jest obrot.\\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_point2_d_acaf883671d54203042eeec83d09be7de}\index{Point2D@{Point2D}!scale@{scale}}
+\index{scale@{scale}!Point2D@{Point2D}}
+\doxysubsubsection{\texorpdfstring{scale()}{scale()}}
+{\footnotesize\ttfamily \label{class_point2_d_acaf883671d54203042eeec83d09be7de} 
+void scale (\begin{DoxyParamCaption}\item[{float}]{factor}{, }\item[{const Vector2f \&}]{center}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}}
+
+
+
+Skaluje punkt wzgledem podanego punktu centralnego. 
+
+Skaluje punkt wzgledem zadanego centrum.
+
+
+\begin{DoxyParams}{Parameters}
+{\em factor} & Wspolczynnik skalowania.\\
+\hline
+{\em center} & Punkt centralny skalowania.\\
+\hline
+\end{DoxyParams}
+
+
+Oblicza nowe wspolrzedne punktu na podstawie skalowania o zadany wspolczynnik wzgledem okreslonego centrum. 
+\begin{DoxyParams}{Parameters}
+{\em factor} & Wspolczynnik skalowania.\\
+\hline
+{\em center} & Punkt, wzgledem ktorego wykonywane jest skalowanie.\\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_point2_d_afbb0bc2f78749017bfccaec312fecbdf}\index{Point2D@{Point2D}!setCoords@{setCoords}}
+\index{setCoords@{setCoords}!Point2D@{Point2D}}
+\doxysubsubsection{\texorpdfstring{setCoords()}{setCoords()}}
+{\footnotesize\ttfamily \label{class_point2_d_afbb0bc2f78749017bfccaec312fecbdf} 
+void set\+Coords (\begin{DoxyParamCaption}\item[{Vector2f}]{new\+Coords}{}\end{DoxyParamCaption})}
+
+
+
+Ustawia nowe wspolrzedne punktu. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em new\+Coords} & Nowe wspolrzedne punktu.\\
+\hline
+\end{DoxyParams}
+
+
+
+\begin{DoxyParams}{Parameters}
+{\em new\+Coords} & Nowe wspolrzedne punktu w przestrzeni 2D.\\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_point2_d_a5988b5eaec511af2f534d9da0d675593}\index{Point2D@{Point2D}!translate@{translate}}
+\index{translate@{translate}!Point2D@{Point2D}}
+\doxysubsubsection{\texorpdfstring{translate()}{translate()}}
+{\footnotesize\ttfamily \label{class_point2_d_a5988b5eaec511af2f534d9da0d675593} 
+void translate (\begin{DoxyParamCaption}\item[{Vector2f}]{translation\+Vector}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}}
+
+
+
+Przesuwa punkt o podany wektor translacji. 
+
+Przesuwa punkt o zadany wektor translacji.
+
+
+\begin{DoxyParams}{Parameters}
+{\em translation\+Vector} & Wektor, o ktory punkt zostanie przesuniety.\\
+\hline
+\end{DoxyParams}
+
+
+Dodaje do wspolrzednych punktu wektor translacji. 
+\begin{DoxyParams}{Parameters}
+{\em translation\+Vector} & Wektor, o ktory punkt ma zostac przesuniety.\\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_point2_d_a44137bb65de2396875934e48a6ee5099}\index{Point2D@{Point2D}!update@{update}}
+\index{update@{update}!Point2D@{Point2D}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily \label{class_point2_d_a44137bb65de2396875934e48a6ee5099} 
+void update (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Aktualizuje stan punktu. 
+
+Aktualizuje stan obiektu.
+
+Funkcja w tej wersji jest pusta, ale moze byc rozszerzona w przyszlosci.
+
+Obecnie ta metoda jest pusta, ale moze byc nadpisana w klasach pochodnych, jesli punkt wymaga specyficznej logiki aktualizacji w trakcie dzialania aplikacji. 
+
+Implements \mbox{\hyperlink{class_updatable_object_a99b02345a8a15d3c5ea2844a2253f510}{Updatable\+Object}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Silnik\+\_\+2\+D/\mbox{\hyperlink{_point2_d_8h}{Point2\+D.\+h}}\item 
+Silnik\+\_\+2\+D/\mbox{\hyperlink{_point2_d_8cpp}{Point2\+D.\+cpp}}\end{DoxyCompactItemize}
